@@ -6,20 +6,48 @@
 
 
 %--------------------------------------------------------------------
-Desde los años sesenta, con la revolución industrial, los humanos han sido relevados de operar tareas riesgosas. La nueva tecnología desarrollado ha evolucionado, siendo utilizada posteriormente para realizar tareas más complejas, o de mucha precisión \cite{Garcia2007}. La fabricación de micro procesadores, o autos en masa son algunos ejemplos de productos que se han florecido gracias a esta tecnología.
+Desde los años sesenta, con la revolución industrial, los humanos han sido relevados de operar tareas riesgosas. La tecnología ha evolucionado, siendo utilizada para realizar tareas más complejas, o de mucha precisión \cite{Garcia2007}. La fabricación de micro procesadores, o autos en masa son algunos ejemplos de productos que han florecido gracias a esta evolución.
 
-Sin embargo, actualmente existen nuevas necesidades y mercados fuera de la tradicional manufactura. Por ejemplo, limpieza, cocina, construcción, agricultura, entre otras. Esto demanda una nueva generación de robots que puedan satisfacer estas necesidades \cite{Garcia2007}.
+Sin embargo, actualmente existen nuevas necesidades y mercados fuera de la tradicional manufactura. Por ejemplo, limpieza, cocina, construcción, agricultura, entre otras. Esto demanda una nueva generación de invenciones que puedan satisfacer estas necesidades \cite{Garcia2007}.
 
 La robótica es la ciencia de percibir y manipular el mundo físico através de dispositivos mecánicos controlados por computadoras \cite{Thrun2005}. Hasta el día de hoy la robótica ha logrado perfeccionar los movimientos precisos milimétricamente, y las tareas repetitivas. Sin embargo, fuera de una línea de producción, estas ventajas no son útiles, pues por ejemplo en un hogar los ambientes son dinámicos y el robot por lo tanto debe poseer características cognitivas \cite{HelioAzevedoRenatoArcherITCenterandICM/USPJosePedroR.InstituteofMathematicalandComputerSciences2017}. 
 
-El laboratorio de investigación ARCOS-Lab (Autonomous robots and cognitive systems) se enfoca primariamente en desarrollar e implementar nuevas técnicas en dispositivos mecánicos con el fin de satisfacer algunas de las necesidades mencionadas anteriormente.
+El laboratorio de investigación ARCOS-Lab (Autonomous Robots and Cognitive Systems) se enfoca primariamente en desarrollar e implementar nuevas técnicas en dispositivos mecánicos con el fin de satisfacer algunas de las necesidades mencionadas anteriormente.
 
-Actualmente (2018) el ARCOS-Lab está trabajando en la construcción de un robot humanoide, el cuál se desea que posea varias de las características mencionadas anteriormente (reconocer su ambiente, y realizar tareas dinámicas como cocinar).
-
-La navegación es uno de los aspectos más importantes que se debe desarrollar para cumplir el fin propuesto. Por lo tanto, el presente proyecto plantea implementar un algoritmo llamado SLAM (Simultaneous localization and mapping) en la navegación dos-dimensional de un robot omnidireccional con ruedas mecanum. 
+Actualmente (2018) el ARCOS-Lab está trabajando en la construcción de un robot humanoide, el cuál se desea que pueda reconocer su ambiente, y realizar tareas dinámicas como cocinar. La navegación es uno de los aspectos más importantes que se debe desarrollar para cumplir el fin propuesto. Por lo tanto, el presente proyecto plantea implementar un algoritmo llamado SLAM (Simultaneous localization and mapping) en la navegación dos-dimensional de un robot omnidireccional con ruedas mecanum. 
 
 Una de las herramientas más potentes de hoy en día en el tema de la robótica es un sistema llamda ROS (Robot Operating System). El mismo se desarrolla primariamente en Linux, y posee muchas herramientas necesarias para realizar una tarea como la propuesta. El software ayuda a incorporar modularmente sensores y algoritmos de software desarrollados por científicos que trabajan en el área.
 
+\newpage
+\section{Alcance}
+Se pretende implementar SLAM en robots pequeños denomindados ``\textit{mobile robots}'' dentro del contexto del ARCOS-Lab. Los mismos son plataformas de aproximadamente $50cm$ x $20cm$. Fueron contruidos para implementar los algoritmos de navegación, y realizar investigación en esta área, con el fin de perfeccionar el sistema que se utilizará para el robot humanoide. Las plataformas poseen en esencia el mismo sistema de ruedas omnidireccionales mecanum del robot humanoide.
+
+En principio, es difícil experimentar con la base del robot humanoide desde un inicio. Primero está la limitación de que la misma plataforma está en un constante proceso de desarrollo, lo que quiere decir que se le hacen mejoras constantemente. Esto dificulta la disponibilidad de la base. Además, en los casos en que la plataforma se controle incorrectamente, los daños que pueda ocasionar a una persona o los objetos dentro del laboratorio son superiores a los que podrían ocasionar las plataformas más pequeñas.
+
+\subsection{Equipo}
+A continuación se hace una breve descripción del equipo principal utilizado para la construcción de las plataformas omnidireccionales utilizadas.
+
+\begin{itemize}
+\item \textit{Motores DC}: Los motores DC utilizados para cada una de las cuatro ruedas de la plataforma omnidireccional. Son motores de $12V$, con un consumo de aproximado $0.53A$ sin carga, y un codificador de cuadratura que produce 3415 pulsos por revolución. El motor logra alcanzar hasta 118rpm según la hoja de fabricante.
+\item \textit{Roboclaw 2x15A}: Este controlador está diseñado para manejar dos motores DC de máximo 15A cada uno, por lo que se utilizarán dos de estos controladores para manejar los cuatro motores.
+\item \textit{STM32F4}: Se necesita un controlador con capacidad de mandar los comandos de control hacia el Roboclaw para poder comandar la plataforma correctamente. Se utilizará un microcontrolador STM32F411-disco para esta tarea. La odemetría será calculada en este microcontrolador, en vez del Roboclaw para mayor precisión.
+\item \textit{RaspBerry PI}: Se utiliza este microcontrolador, como la unidad de procesamiento principal en donde se controlarán los perifericos por medio del sistema de ROS. A esta tarjeta se conectará el Kinect y el Stm32F4.
+\item \textit{Kinect 2}: Este será el sensor utilizado para la odometría visual. Será utilizado principalmente para generar la información del mapa, y posteriormente la ubicación del robot dentro del mismo mapa. 
+\end{itemize}
+
+\subsection{Herramientas}
+Se describen las herramientas que se utilizarán en el desarrollo del proyecto.
+
+\begin{itemize}
+\item \textit{ROS}: El desarollo e implentación de SLAM se realizará en ROS, puesto que es un sistema que permite la modularización de los diferentes componentes del robot. Facilita la conexión entre los diferentes perifericos. Posee librerías que contienen el código necesario para implementar SLAM.
+\item \textit{Gazebo}: Un simulador de interacciones físicas para ROS, en donde se puede realizar la implementación completa del agoritmo de control para las plataformas móviles.
+\end{itemize}
+
+\subsection{Resultados}
+El resultado final esperado es la implementación física del algoritmo a las plataformas ya existentes del laboratorio. Además, se realizarán simulaciones que muestren los resultados esperados en la realidad, esto con el fin de dividr en etapas la implementación, para facilitar la detección de errores. En otras palabras, se tendrá tanto la simulación como la implementación física del algoritmo de navegación autónoma.
+
+\section{Justificación}
+Este proyecto pretende brindar la base sobre la cuál nuevos proyectos pueden trabajar en nuevos algoritmos de navegación. Además, pretende fijar un primer paso para la implementación de navegación en el robot humanoide.
 
 \section{Objetivos}
 
@@ -44,7 +72,10 @@ Para el desarrollo de este proyecto se establecieron los siguientes objetivos:
     \item Convertir la imagen en formato PointCloud2 (3d) a un formato LaserScan (2d).
     \item Conectar el sensor láser Hokuyo a una computadora corriendo Linux e utilizar ROS para interpretar la imagen en formato LaserScan.
     \item Utilizar el simulador Gazebo en ROS con un modelo básico de un robot, e probar el uso de sensores y movimiento del mismo.
-    \item Conectar el controlador de motores RoboClaw con un STM32F4 y hacer pruebas de comunicación. 
+    \item Conectar el controlador de motores RoboClaw con un STM32F4 y hacer pruebas de comunicación.
+    \item Diseñar el código necesario para leer el codificador de cuadratura que poseen los motores.
+    \item Implementar el código necesario para la odometría de los motores.
+    \item Diseñar un controlador PID para la velocidad del motor.
     \item Realizar pruebas de movimiento, e implemetar el protocolo de comunicación en el STM32f4.
     \item Utilizar un Joystick DualShock 4 en ROS y utilizarlo para mover el robot.
     \item Implementar el algoritmo de gmapping a el robot de la simulación en gazebo. 
