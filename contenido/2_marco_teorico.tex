@@ -20,8 +20,14 @@ Existen varios aspectos a considerar cuando se diseña un robot: movilidad, cont
 
 El movimiento se puede realizar con un robot que tiene dos grados de libertad (se puede mover hacia adelante y atrás, con un ángulo de dirección), pero hay que maniobrar. Es más fácil realizar esta tarea si un robot tiene tres grados de libertad. Esto quiere decir, se puede mover hacia adelante y hacia atrás, izquierda derecha, y rotar. De esta manera, la movilidad aumenta, puesto que la cantidad de movimientos posibles que un robot puede realizar para llegar a una configuración final aumenta \cite{Batlle2009}.
 
-Existe un tipo de ruedas, conocidas como ruedas omnidireccionales, que están compuestas de pequeños rodillos que habilitan el deslizamiento de la rueda en cierta dirección. En particular, las ruedas mecanum, como las que se muestran en la figura, 
+Existe un tipo de ruedas, conocidas como ruedas omnidireccionales, que están compuestas de pequeños rodillos que habilitan el deslizamiento de la rueda en cierta dirección. En particular, las ruedas mecanum, como las que se muestran en la figura \ref{fig:ruedas_mecanum}, son un caso especial de las ruedas omnidireccionales. Los rodillos están en cierto ángulo $\alpha$ de desface, que permite realizar los movimientos izquierda-derecha con una combinación de fuerzas específica para cada ruedas.
 
+\begin{figure}[H]
+  \centering
+  \includegraphics[scale=0.3]{imagenes/ruedas_mecanum.png}
+  \label{fig:ruedas_mecanum}
+  \caption{Diagrama de componentes de un robot omnidireccional. Autoría propia.}
+\end{figure}
 
 \section{¿A quién va dirigido el trabajo escrito?}
   
