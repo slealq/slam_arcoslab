@@ -11,7 +11,7 @@
 % -----------------------
 
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{proyectoelectrico}[2016/01/31 Informe del Proyecto Eléctrico de Ingeniería Eléctrica - UCR]
+\ProvidesClass{proyectoelectrico}[2016/01/31 Informe del Proyecto Electrico de Ingenieria Electrica - UCR]
 \LoadClass[letterpaper,11pt,twoside]{memoir}
 
 \DeclareOption*{\PassOptionsToclass{\CurrentOption}{book}}
