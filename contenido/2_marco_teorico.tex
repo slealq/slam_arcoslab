@@ -1,238 +1,168 @@
 % ----------------------
-\chapter{Nota teórica} 
+\chapter{Nota teórica}
 % ----------------------
 \label{C:nota_teorica}
 
-Un robot omnidireccional es una plataforma que se puede mover autonomamente. Son utilizadas en industrias de manufactura flexibles y en ambientes de servicio \cite{Batlle2009}. Hay tres aspectos importantes que posee un robot omnidireccinal. La figura \ref{fig:robot_omnidireccional} ayuda a ilustrar las tres características básicas de un rotot omnidireccional.
+Un robot omnidireccional es una plataforma que se puede mover autónomamente. Son utilizadas en industrias de manufactura flexibles y en ambientes de servicio \cite{Batlle2009}. Hay tres aspectos importantes que posee un robot omnidireccinal. La figura \ref{F:omni} ayuda a ilustrar las tres características básicas de un rotot omnidireccional.
 
 A continuación, se procede en las siguientes secciones a clarificar algunos conecptos necesarios para entender cómo se consiguen estas características en un robot móvil.
 
 \begin{figure}[H]
-  \centering
-  \includegraphics[scale=0.6]{imagenes/robot_omnidireccional.png}
-  \label{fig:robot_omnidireccional}
-  \caption{Diagrama de componentes de un robot omnidireccional. Autoría propia.}
+    \centering
+    \includegraphics[scale=0.6]{imagenes/robot_omnidireccional.png}
+    \caption{Diagrama de componentes de un robot omnidireccional. Autoría propia.}
+    \label{F:omni}
 \end{figure}
 
 
 \section{Movilidad}
+\subsection{Ruedas}
 Existen varios aspectos a considerar cuando se diseña un robot: movilidad, control y posicionamiento. La primera hace referencia a la cantidad de movimientos que un robot puede realizar para llegar a una configuración final. Deben ser capaces de alcanzar cualquier posición y cualquier orientación en su plano de movimiento. Esto quiere decir que el marco del robot debe poseer tres coordenadas independientes del plano general de movimiento \cite{Batlle2009}.
 
 El movimiento se puede realizar con un robot que tiene dos grados de libertad (se puede mover hacia adelante y atrás, con un ángulo de dirección), pero hay que maniobrar. Es más fácil realizar esta tarea si un robot tiene tres grados de libertad. Esto quiere decir, se puede mover hacia adelante y hacia atrás, izquierda derecha, y rotar. De esta manera, la movilidad aumenta, puesto que la cantidad de movimientos posibles que un robot puede realizar para llegar a una configuración final aumenta \cite{Batlle2009}.
 
-Existe un tipo de ruedas, conocidas como ruedas omnidireccionales, que están compuestas de pequeños rodillos que habilitan el deslizamiento de la rueda en cierta dirección. En particular, las ruedas mecanum, como las que se muestran en la figura \ref{fig:ruedas_mecanum}, son un caso especial de las ruedas omnidireccionales. Los rodillos están en cierto ángulo $\alpha$ de desface, que permite realizar los movimientos izquierda-derecha con una combinación de fuerzas específica para cada ruedas.
+Existe un tipo de ruedas, conocidas como ruedas omnidireccionales, que están compuestas de pequeños rodillos que habilitan el deslizamiento de la rueda en cierta dirección. En particular, las ruedas mecanum, como las que se muestran en la figura \ref{F:ruedas_mecanum}, son un caso especial de las ruedas omnidireccionales. Los rodillos están en cierto ángulo $\alpha$ de desface, que permite realizar los movimientos izquierda-derecha con una combinación de fuerzas específica para cada ruedas.
 
 \begin{figure}[H]
   \centering
   \includegraphics[scale=0.3]{imagenes/ruedas_mecanum.png}
-  \label{fig:ruedas_mecanum}
-  \caption{Diagrama de componentes de un robot omnidireccional. Autoría propia.}
+  \caption{Ruedas omnidireccionales Mecanum, con $\alpha = 45^\circ $. Tomado de \cite{Batlle2009}.}
+  \label{F:ruedas_mecanum}
 \end{figure}
 
-\section{¿A quién va dirigido el trabajo escrito?}
-  
-Una guía útil para tomar decisiones sobre qué incluir en el trabajo escrito es tener conciencia de cuál es el público meta de la lectura. Esto marca grandes diferencias, pues, por ejemplo, para un sector externo de la carrera habría que iniciar explicando conceptos básicos; mientras que, si está dirigido a profesores, se omite casi todo tema introductorio y se enfoca en los aspectos novedosos del trabajo. Sin embargo, este último enfoque puede dejar a muchos lectores con vacíos importantes de teoría.
+La combinación de las diferentes velocidades en cada uno de los motores, producen los tres grados de libertad en el marco del robot. Específicamene, la kinemática del robot la define el autor \cite{Taheri2015}. A continuación, se muestran las ecuaciones que definen el movimiento del robot:
 
-Tomando en consideración lo anterior, la recomendación de la Escuela es la siguiente:
-
-\begin{quote}
-Los lectores del trabajo escrito del Proyecto Eléctrico son estudiantes de ingeniería eléctrica del último año de carrera.
-\end{quote}
-
-Esta recomendación permite tomar algunas decisiones importantes, por ejemplo:
-
-\begin{description}
-\item[¿Se debe explicar el concepto de resistencia eléctrica?] No, porque se asume a todo lector familiar con el tema\footnote{A pesar de eso, la explicación de la resistencia eléctrica se ha incluido muchas veces en trabajos escritos.}. Sería justificable cuando el proyecto estudia algún concepto fundamental relacionado con la resistencia.
-\end{description}
-
-Como regla de dedo:
-
-\section{``Antecedentes'' vs ``Marco Teórico'' vs ``Estado del Arte''}
-
-\section{Las partes del documento escrito}
-
-\subsection{Asuntos preliminares}
-
-\subsubsection{Portada}
-
-\subsubsection{Hoja de aprobación}
-
-\subsubsection{Resumen}
-
-\subsubsection{Resumen en inglés}
-
-\subsubsection{Dedicatoria}
-
-\subsubsection{Agradecimientos}
-
-\subsubsection{Índices}
-
-\subsection{Cuerpo del documento}
-
-\subsubsection{Primer capítulo: introducción}
-
-\subsubsection{Segundo capítulo: teoría}
-
-\subsection{Contenido posterior}
-
-\subsubsection{Apéndices}
-
-\subsubsection{Bibliografía}
-
-\section{Convenciones básicas de formato en español}
-
-\begin{description}
-\item[Mayúsculas en los títulos] Lleva mayúscula solamente la primera letra del título, excepto por nombres propios o siglas que por su naturaleza se escriben en mayúscula.
-\end{description}
-
-% Revisar qué hay que dejar de aquí:
-
-\section{Más explicaciones aquí}
-
-En el segundo capítulo del informe, debe resumirse el estudio realizado sobre \emph{estado de la técnica}, en la temática relacionada con el proyecto.  Este se puede denominar ``Antecedentes'', ``Marco de referencia'', ``Base teórica'', o ``Marco teórico''.
-
-Por tratarse de una presentación con base en la recopilación, el análisis y la síntesis de trabajos de otros autores, la referencia adecuada a los mismos, es indispensable.  Toda copia (\emph{¡plagio!}), es inaceptable.
-
-Para indicar las fuentes bibliográficas puede utilizarse el comando del paquete \texttt{natbib} \texttt{\textbackslash cite\{bibtexkey\}} para utilizar el formato ``Autor (año)'' o el comando \texttt{\textbackslash citep\{bibtexkey\}} para mostrarla en el formato ``(Autor, año)''.
-
-%en el siguiente párrafo se supone que se han empleado los comandos cite o citep
-Por ejemplo se obtiene: ``Según Wang (1996) la frecuencia ...'' (si se cita con \texttt{cite}), o ``... para este diseño se han utilizado modelos determinísticos (Smith, 2005) y estocásticos (Bell et. al, 2010).''  (si se citan con \texttt{citep}).  
-
-El contenido del capítulo debe ser relevante para el proyecto y no ``material de relleno'', o incluido con el único propósito de ``engordar'' el informe.
-
-El estado de la técnica establece el \emph{punto de partida} del estudio realizado y posiblemente también, la \emph{base de comparación} para las pruebas realizadas.
-
-Este capítulo muestra la capacidad de análisis y síntesis del estudiante.
- 
-%- declaración de una sección ---------------------------------------
-\section{Ecuaciones}
-Las ecuaciones estarán centradas y numeradas en forma secuencial por capítulo, al margen derecho.  La referencia a ellas se hará utilizando su número.
-
-¡Texto de ejemplo! - ``El modelo utilizado para representar al proceso, es de primer orden más tiempo muerto, dado por la función de transferencia
-
-\begin{equation}  %inclusión de ecuaciones
-	P(s) = \frac{K \me^{-Ls}}{Ts+1}, \label{ec:01}
-\end{equation}
-
-\noindent donde $K$ es la ganancia, $T$ la ...''  
-%si el texto después de la ecuación no inicia un nuevo párrafo y se ha insertado una linea en blanco depues de esta, es necesario poner \noindent para que el texto siguiente no tenga sangría (formato predeterminado).
-
-Las ecuaciones forman parte del texto, por lo que deben terminarse con el signo de puntuación requerido, una coma o un punto.
-
-Para referirse a ellas se hace uso de la etiqueta (\texttt{label}) asignada a la ecuación usando \texttt{\textbackslash eqref\{etiqueta\}} que mostrará su número.  Por ejemplo ``El modelo \eqref{ec:01} es el más utilizado para ...''
-
-%en el siguiente párrafo se supone que se ha utilizado \eqref{etiqueta} para referencias las ecuacioenes
-El texto debe mostrar ``... sustituyendo (2.4) y (2.5) en (2.2), se obtiene ...'' y no ``... sustituyendo la ecuación (2.4) y la ecuación (2.5) en la ecuación (2.2), se obtiene...''  
-
-¡Ejemplos de ecuaciones!
-
-Usando \texttt{equation}:
 \begin{equation}
-	\tau \frac{\md T_{tc}(t)}{\md t} + T_{tc}(t) = T_{gas}(t).
+\begin{bmatrix}
+w_1\\
+w_2\\
+w_3\\
+w_4\\
+\end{bmatrix}
+= \frac{1}{r}
+\begin{bmatrix}
+1 & -1 & -(l_x + l_y) \\
+1 & 1 & (l_x + l_y) \\
+1 & 1 & -(l_x + l_y) \\
+1 & -1 & (l_x + l_y) \\
+\end{bmatrix}
+\begin{bmatrix}
+v_x \\
+v_y \\
+w_z \\
+\end{bmatrix}
+\label{E:kinematica_inversa}
 \end{equation}
 
-Ecuaciones alineadas utilizando \texttt{align}:
+\begin{equation}
+\begin{bmatrix}
+v_x \\
+v_y \\
+w_z \\
+\end{bmatrix}
+= \frac{r}{4}
+\begin{bmatrix}
+1 & 1 & 1 & 1 \\
+-1 & 1 & 1 & -1 \\
+\frac{-1}{l_x + l_y} & \frac{1}{l_x + l_y} & \frac{-1}{l_x + l_y} & \frac{1}{l_x + l_y} \\
+\end{bmatrix}
+\begin{bmatrix}
+w_1\\
+w_2\\
+w_3\\
+w_4\\
+\label{E:kinematica_directa}
+\end{bmatrix}
+\end{equation}
 
-\begin{align}
-	L_1 \frac{\md i_{L_1} (t)}{\md t} &= v(t) - R_1 i_{L_1}(t) - v_c(t), \\
-	C \frac{\md v_c (t)}{\md t} &= i_L(t)- \frac{1}{R_2} v_c(t).
-\end{align}
+\begin{equation}
+\begin{bmatrix}
+\frac{d v_{x abs}}{dt} \\
+\frac{d v_{y abs}}{dt} \\
+\end{bmatrix}
+ =
+\begin{bmatrix}
+cos(\frac{d w_z}{d t}) & -sin(\frac{d w_z}{d t}) \\
+sin(\frac{d w_z}{d t}) & cos(\frac{d w_z}{d t}) \\
+\end{bmatrix}
+\begin{bmatrix}
+\frac{d v_x}{dt} \\
+\frac{d v_y}{dt} \\
+\end{bmatrix}
+\label{E:transformación}
+\end{equation}
 
-\section{Figuras y cuadros}
-Las figuras y los cuadros son \emph{elementos flotantes}. Aunque se le puede ``sugerir'' a \LaTeX~ donde ubicarlos, es conveniente dejarlos ``flotar''.
+La ecuación \ref{E:kinematica_inversa} se utiliza para averiguar la velocidad necesaria en cada una de las ruedas, dado un comando de velocidad relativa al robot. Esto quiere decir que $v_x$ siempre es la velocidad del robot hacia adelante y hacia atrás, sin importar su posición con el mundo. $v_y$ siempre es la velocidad del robot hacia los lados, y lo mismo con $w_Z$.
 
-\subsection{Figuras}
-Las referencias a las figuras debe hacerse utilizando el número asignado a ellas.  Para esto se le asigna una etiqueta (con \texttt{label}) y luego se utiliza esta para hacer la referencia (con \texttt{ref}).  Usar en el texto el término ``figura'' y no Fig.'' o ``fig.''.
+La ecuación \ref{E:kinematica_directa} en conjunto con la ecuación \ref{E:transformación}, se utilizan para saber la posición real del robot en un plano x,y cartesiano. Es decir, se puede conocer la posición del robot en $x$, $y$, con respecto al mundo.
 
-La leyenda (con \texttt{caption}) de la figura, irá en la parte inferior de la misma.  Como en forma predeterminada en la clase \texttt{eieproyecto} las figuras están centradas, no es necesario usar \texttt{centering} para hacerlo.
+\subsection{Motores}
+Para el robot omnidireccional en contrucción, se utilizarán motores DC. El diagrama básico de un motor DC se muestra en la figura \ref{F:motor_dc}.
 
-Por ejemplo ``Considérese el diagrama de bloques mostrado en la figura en donde el proceso controlado está dado por ...''.
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.5]{imagenes/motor_dc.png}
+\caption{Diagram simplificado de un motor DC. Tomado de \cite{Giblisco2016}}
+\label{F:motor_dc}
+\end{figure}
 
-No utilizar ``... en la siguiente figura ...'', emplear siempre el número correspondiente para referirse a ellas.
+Cómo se observa en la figura, en un nivel básico, un motor DC posee dos o más embobinados, los cuáles ejercen una fuerza a un rotor el cuál posee un imán. Cuando pasa una corriente por el embobinado, la bobina produce un campo magnético, que produce una rotación en el rotor. Un comnutador causa que se entrege corriente en diferentes momentos hacia los diferentes embobinados, causando que el rotor gire constantemente \cite{Giblisco2016}.
 
-Cuando las figuras son muy pequeñas, se puede colocar la leyenda al lado de la misma, con el ambiente \texttt{SCfigure} del paquete \texttt{sidecap}.  Un ejemplo de esto se muestra en la figura.
+Cabe destacar que esta conmutación se debe a una característica mecánica de la construcción del motor. Por lo tanto, lo único que se requiere para mover más rápido o más lento el motor, es más corriente o menos. Esto causará que el campo magnético producido sea mayor, y gire el rotor más velozmente.
 
-Cuando un gráfico muestre varias curvas, estas deben poderse distinguir, no solamente en la pantalla de la computadora, usando diferentes colores, si no también en una impresión en blanco y negro, utilizando lineas de trazos diferentes, como se muestra en la figura.
+\subsection{Encoder}
+Un encoder es un dispositivo que se encuentra comunmente en sistemas de control modernos, y son utilizados para convertir desplazamiento lineal o rotacional en señales codificadas o pulsos de señal. Los encoders que publican información digital son conocidos como encoders absolutos \cite{Golnaraghi2017}.
 
-\LaTeX~ nunca coloca las figuras y los cuadros en una página anterior a la en que son incluidas.  Los elementos flotantes los coloca en la página donde se hace referencia a ellos, o en una de las siguientes.
+Por otra parte, los encoders incrementales, producen un pulso en cada incremento, sin enmbargo no hacen distinción entre los incrementos \cite{Golnaraghi2017}.
 
-Además, en el texto debe hacerse referencia a todas las figuras y cuadros incluidos en el informe.  Si alguno de ellos no se menciona en el texto, es que no se requiere para entender el desarrollo presentado y por lo tanto es innecesario y se podría omitir sin que se afecte el informe.
+En específico, un encoder de quadratura, posee dos sensores a un cierto desfase entre ellos, generalmente de $90^\circ$ . La figura \ref{F:encoder} muestra un ejemplo de un tipo de encoder utilizando luz, y un ejemplo de una señal producida por un encoder incremental de quadratura.
 
-\subsection{Cuadros}
-Los cuadros son el otro elemento flotante utilizado en los informes y también es conveniente dejar que \LaTeX~ los coloque en donde considere que es más adecuado.
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.5]{imagenes/encoder_quadratura.png}
+\includegraphics[scale=0.5]{imagenes/encoder_opto.png}
+\caption{Ejemplo de un encoder utilizando luz, y la señal producida por un encoder de cuadratura. Tomado de \cite{Golnaraghi2017}.}
+\label{F:encoder}
+\end{figure}
 
-Los cuadros no llevarán ninguna línea divisoria vertical, solo horizontales. Una en la parte superior (\texttt{toprule}), una bajo la línea de cabecera (\texttt{midrule}) y una en la parte inferior (\texttt{bottomrule}).  Normalmente basta con estas tres líneas, pero si fuera necesaria alguna otra para una división horizontal, esta debe ser del tipo \texttt{midrule}.
+La señal que se produce, ayuda a identificar la dirección de rotación del motor, ya que el desfase entre las señales proporciona esta información. La frecuencia de los clicks, indican la velocidad del encoder, y finalmente, la cantidad de clicks ayudan a identificar la posición.
 
-Se recomienda revisar los comandos para la construcción de cuadros, incluidos en el manual de la clase \texttt{memoir} \cite{memoir2011}, o en la del paquete \texttt{booktabs} \cite{fear2005}.
+\section{Visión}
+Para que un robot omnidireccional realice navegación, existe cierta información que resulta ser útil. Los sensores utilizados, generalmente permiten medir dos propiedades del ambiente: la profundidad de lo que se ve (La más importante), y el color de lo que se está viendo. La primera es esencial para lograr la navegación.
 
-La leyenda (\texttt{caption}) del cuadro se mostrará en la parte superior.  Para poder referirse al cuadro (con \texttt{ref}), se le asigna una etiqueta (con \texttt{label}).
+\subsection{Profundidad}
+Existen muchos tipos de sensores diseñados para dar información de profundidad, como lo son sensores de ultrasonido, sensores laser de rango, entre otros. Sin embargo, la mayoría posee ciertas limitaciones que impiden el uso de los mismos en el campo de los robots autónomos, como lo son los problemas exactitud \cite{DanielMaierArminHornung2012}.
 
-En forma predefinida, los cuadros se mostrarán centrados horizontalmente, por lo que no es necesario hacer esa indicación. 
+La llegada de los sensores de profundidad en 3D, como el Kinect o el Asus Xtion, que operan com patrones infrarojos han superado estas limitaciones. Estas cámaras son relativamente exactas, y proveen una información densa y tridimensional directamente del hardware \cite{DanielMaierArminHornung2012}. Por esta razón, los mismos sensores son muy utilizados en la navegación de robots autónomos.
 
-El cuadro \ref{tab:01} es un ejemplo de un cuadro de datos simple.
+Además de sensores como el Kinect, existen sensores de mayor precisión en un ámbito 2D, como lo son los sensores denominados en inglés \textit{Lidar}. Un ejemplo de estos sensores son producidos por la marca Hokuyo.
 
-%inclusión de un cuadro con datos
-\begin{table}
-\caption{Parámetros de los modelos.} \label{tab:01o}
-		\begin{tabular}{@{}*{4}{c}@{}}
-    \toprule
-    $K_p$ & $T_1$ & $T_2$ & $L$ \\
-    \midrule
-     1,01 & 1,50 & 0,75 & 0,12 \\
-		 1,15 & 2,37 & 0,15 & 0,28 \\
-		 2,25 & 5,89 & 2,15 & 1,60 \\
-    \bottomrule
-    \end{tabular}
-\end{table}
+A continuación se muestra en la figura \ref{F:pointcloud} una muestra de la salida de un sensor de profundidad, utilizando una librería llamada PCL para visualizar la información.
 
-Si la primera columna corresponde a leyendas o parámetros que identifican los datos de la línea, esta debe estar justificada a la izquierda, como se muestra en el cuadro \ref{tab:AH}, que ha sido tomada de \cite{astromhagglund2006}.
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.3]{imagenes/rviz_pointcloud.png}
+\caption{Imagen de una captura de un sensor de profundidad. Tomado de \cite{Rusu2011}.}
+\label{F:pointcloud}
+\end{figure}
 
-\begin{table}
-\caption{Parámetros de los controladores ...} \label{tab:AH}
-\begin{center}
-    \begin{tabular}{@{}l*{7}{c}@{}}
-    \toprule
-    Controller & $K$ & $K_i$ & $K_d$ & $\beta$ & $T_i$ & $T_d$ & IAE \\
-    \midrule
-    PD &  1,333 & 0 & 1,333 & 1 & 0 &1 & $\infty$ \\
-		PI & 0,433 & 0,192 & 0 & 0,14 & 2,25 & 0 & 6,20 \\
-		PID MIGO & 1,305 & 0,758 & 1,705 & 0 & 1,72 & 1,31 & 2,25 \\
-		PID $T_i=4 \ T_d$ & 1,132 & 0,356 & 0,900 & 0,9 & 3,18 & 0,80 & 2,51 \\
-    \bottomrule
-    \end{tabular}
-\end{center}
-\end{table}
+\subsection{Color}
 
-Se puede especificar una cabecera para más de una columna y utilizar lineas horizontales que abarquen solo unas pocas columnas, como se muestra en el cuadro \ref{tab:muestra}.
+El color en la parte de visión no es fundamental para realizar navegación. Esta información se puede utilizar para realizar detección de objetos, o encontrar cierto tipo de marcadores en el mundo para ubicarse mejor, sin embargo no es indispensable en el uso de navegación. Ejemplos de casos en donde se utilizan los sensores de color se pueden observar en \cite{Manduchi2005} y \cite{Lai2011}.
 
-\begin{table}
-\caption{Ejemplo de otro cuadro.} \label{tab:muestra}
-	\begin{tabular}{@{}l*{4}{c}@{}}
-	\toprule
-	& \multicolumn{2}{c}{Prueba 1} & \multicolumn{2}{c}{Prueba 2} \\
-	\cmidrule(l{2pt}r{2pt}){2-3}\cmidrule(l{2pt}r{2pt}){4-5} 
-	& $\Delta E=5$ V & $\Delta E = -5$ V & $\Delta E = 10$ V & $\Delta E = -10$ V \\
-	\midrule
-	Ganancia             &  1,06 & 0,98 & 1,12 & 0,97 \\
-	Tiempo subida, s  &  5,67 & 5,89 & 6,02 & 5,74 \\
-	Sobrepaso máx, \%        &  2,67 & 3,25 & 2,91 & 1,56 \\
-	Error, \% &  0,25 & 0,56 & 0,97 & 0,18 \\
-	\bottomrule
-	\end{tabular}
-\end{table}
 
-\newpage
-Cuando los cuadros son pequeños (abarcan menos de la mitad del ancho del texto), se puede colocar la leyenda a la par del cuadro, utilizando el ambiente \texttt{SCtable} del paquete \texttt{sidecap}, tal como se muestra en el cuadro \ref{tab:01}.  Compare este, con el cuadro \ref{tab:01o}.
+\section{Autonomía}
 
-\begin{SCtable}
-\caption[Parámetros de los modelos]{Parámetros de los modelos, obtenidos a partir de las tres curvas de reacción.} \label{tab:01}
-    \begin{tabular}{@{}*{4}{c}@{}}
-    \toprule
-    $K_p$ & $T_1$ & $T_2$ & $L$ \\
-    \midrule
-     1,01 & 1,50 & 0,75 & 0,12 \\
-		 1,15 & 2,37 & 0,15 & 0,28 \\
-		 2,25 & 5,89 & 2,15 & 1,60 \\
-    \bottomrule
-    \end{tabular}
-\end{SCtable}
+La autonomía en un robot, hace referencia a la capacidad del robot de comportarse de manera ``inteligente'' en algún aspecto \cite{Thrun2005}. Por ejemplo un vehículo que tenga la capacidad de manejarse sólo, y no provoque choques. Otro ejemplo sería robots que puedan limpiar un desastre nuclear, y no sean los humanos los que se vean expuestos a la radiación \cite{Thrun2005}.
+
+Un robot que realice navegación autónomamente, se espera que pueda maniobrar en un espacio, ya sea nuevo o conocido, y pueda crear un mapa del lugar. La navegación por lo tanto, se compone de dos aspectos importantes. El primero, sería el mapeo y el segundo, la localización.
+
+\subsection{Navegación}
+
+Para empezar a diseñar el aspecto de la navegación en un robot, se deben tener principalmente dos cosas. La primera que el robot se pueda mover inteligentemente, y maniobrar lo menos posible. Por lo tanto, un robot que posea tres grados de libertad es deseable, pues hace que la tarea de desplazarse en un ambiente sea bastante sencilla \cite{Batlle2009}.
+
+Además se necesita saber la distancia que ha recorrido el robot en su plano, y cuánto ha rotado. Esto para que el robot sepa que el cambio en la información del sensor de profundidad se debe a un cambio en su posición, y no a un cambio en el mundo. Esto se logra a través de los encoders que se encuentran en los motores del robot.
+
+Finalmente, se necesita un sensor de profundidad, como se habló anteriormente. Esto le permitirá al robot descubrir su entorno, y crear un mapa del mismo.
+
+Existen librerías que contienen la programación necesaria para realizar navegación en un robot que cumpla con los requisitos anteriormente descritos. Un ejemplo, es la librería denominada Navigation Stack, en el entorno de Ros. ROS (Robot Operating System), es un set de librerías, herramientas y convenciones que tratan de simplificar la tarea de crear comportamientos roboticos complejos y robustos a través de una amplia variedad de plataformas robóticas \cite{Quigley2009}.
