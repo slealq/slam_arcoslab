@@ -157,6 +157,13 @@ La autonomía en un robot, hace referencia a la capacidad del robot de comportar
 
 Un robot que realice navegación autónomamente, se espera que pueda maniobrar en un espacio, ya sea nuevo o conocido, y pueda crear un mapa del lugar. La navegación por lo tanto, se compone de dos aspectos importantes. El primero, sería el mapeo y el segundo, la localización.
 
+\subsection{Mapeo}
+
+El objetivo del mapeo en un robot autónomo es aprender del entorno que rodea el robot, con el fin de realizar navegación en un futuro, o enviar este mapa a seres humanos. Es primordial tener un sistema robusto, para que los resultados del mapeo en diferentes ambientes sean consistentes.
+
+Existen librerías que contienen la programación necesaria para realizar mapeo en un robot. Un ejemplo, es la librería denominada Navigation Stack, en el entorno de Ros. ROS (Robot Operating System), es un set de librerías, herramientas y convenciones que tratan de simplificar la tarea de crear comportamientos robóticos complejos y robustos a través de una amplia variedad de plataformas robóticas \cite{Quigley2009}.
+
+
 \subsection{Navegación}
 
 Para empezar a diseñar el aspecto de la navegación en un robot, se deben tener principalmente dos cosas. La primera que el robot se pueda mover inteligentemente, y maniobrar lo menos posible. Por lo tanto, un robot que posea tres grados de libertad es deseable, pues hace que la tarea de desplazarse en un ambiente sea bastante sencilla \cite{Batlle2009}.
@@ -165,4 +172,5 @@ Además se necesita saber la distancia que ha recorrido el robot en su plano, y 
 
 Finalmente, se necesita un sensor de profundidad, como se habló anteriormente. Esto le permitirá al robot descubrir su entorno, y crear un mapa del mismo.
 
-Existen librerías que contienen la programación necesaria para realizar navegación en un robot que cumpla con los requisitos anteriormente descritos. Un ejemplo, es la librería denominada Navigation Stack, en el entorno de Ros. ROS (Robot Operating System), es un set de librerías, herramientas y convenciones que tratan de simplificar la tarea de crear comportamientos roboticos complejos y robustos a través de una amplia variedad de plataformas robóticas \cite{Quigley2009}.
+Igual que para el caso del mapeo, la librería de Navigation Stack en ROS continen la programación necesaria para realizar navegación, siempre y cuando el robot cumpla con las características anteriormente descritas.
+
