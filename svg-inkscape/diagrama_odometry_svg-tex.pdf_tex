@@ -1,0 +1,82 @@
+%% Creator: Inkscape inkscape 0.92.2, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'diagrama_odometry_svg-tex.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{496.94679974bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.99184653)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{diagrama_odometry_svg-tex.pdf}}%
+    \put(0.40154049,0.91232287){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Motor 1A\end{tabular}}}}%
+    \put(0.04998713,0.91394075){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Motor 2A\end{tabular}}}}%
+    \put(0.04817146,0.74324528){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Motor 1B\end{tabular}}}}%
+    \put(0.40826535,0.720338){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Motor 2B\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{diagrama_odometry_svg-tex.pdf}}%
+    \put(0.2216567,0.9185386){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Roboclaw A\end{tabular}}}}%
+    \put(0.22258391,0.71512577){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Roboclaw B\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{diagrama_odometry_svg-tex.pdf}}%
+    \put(0.06736979,0.89517241){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}"w1"\end{tabular}}}}%
+    \put(0.4230336,0.89354698){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}"w2"\end{tabular}}}}%
+    \put(0.42518963,0.70058298){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}"w4"\end{tabular}}}}%
+    \put(0.06567285,0.72591622){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}"w3"\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{diagrama_odometry_svg-tex.pdf}}%
+    \put(0.51235009,0.87105772){\color[rgb]{0.19215686,0.95686275,0.01176471}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}lx\end{tabular}}}}%
+    \put(0.30138853,0.66178367){\color[rgb]{1,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}ly\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{diagrama_odometry_svg-tex.pdf}}%
+    \put(0.42234604,0.75260266){\color[rgb]{0.15686275,0,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}r\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{diagrama_odometry_svg-tex.pdf}}%
+    \put(0.40486472,0.56332184){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}systick handler\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{diagrama_odometry_svg-tex.pdf}}%
+    \put(0.86003878,0.35372395){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}wait n \\cycles  \end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{diagrama_odometry_svg-tex.pdf}}%
+    \put(0.12066494,0.53760546){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}update \\global \\pos\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{diagrama_odometry_svg-tex.pdf}}%
+  \end{picture}%
+\endgroup%

@@ -1,0 +1,720 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg3131"
+   inkscape:version="0.92.2 2405546, 2018-03-11"
+   sodipodi:docname="diagrama_codigoprincipal.svg">
+  <defs
+     id="defs3125">
+    <linearGradient
+       id="linearGradient4022"
+       osb:paint="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop4020" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4022"
+       id="linearGradient4024"
+       x1="2.7023215"
+       y1="12.950892"
+       x2="46.623571"
+       y2="12.950892"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.0796002,0,0,0.6573887,-0.0732955,-1.1380267)" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1"
+     inkscape:cx="354.80152"
+     inkscape:cy="932.89719"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1052"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata3128">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.25400001;stroke-miterlimit:4;stroke-dasharray:0.50800002, 0.25400001, 0.12700001, 0.25400001;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4319"
+       width="96.132111"
+       height="76.142448"
+       x="108.08245"
+       y="27.799385"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_main.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="fill:none;fill-opacity:0;stroke:#000000;stroke-width:0.09734104;stroke-miterlimit:4;stroke-dasharray:0.29202311, 0.09734103;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4010"
+       width="21.496027"
+       height="5.4416976"
+       x="12.157318"
+       y="43.860432"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_main.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.93888855px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="12.951244"
+       y="47.613316"
+       id="text4014"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_main.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan4012"
+         x="12.951244"
+         y="47.613316"
+         style="font-size:3.52777767px;stroke-width:0.26458332">while <tspan
+   style="font-size:3.52777767px;fill:#0007ff;fill-opacity:1"
+   id="tspan4016">true :</tspan></tspan></text>
+    <rect
+       style="fill:none;fill-opacity:0;stroke:url(#linearGradient4024);stroke-width:0.39173785;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4018"
+       width="47.131298"
+       height="8.1997499"
+       x="2.9871781"
+       y="3.2758684"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_main.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.93888855px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="4.3467264"
+       y="8.9821424"
+       id="text4028"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_main.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan4026"
+         x="4.3467264"
+         y="8.9821424"
+         style="stroke-width:0.26458332">stm32-roboclaw.c</tspan></text>
+    <rect
+       style="fill:none;fill-opacity:0;stroke:#000000;stroke-width:0.65145093;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4041"
+       width="94.632149"
+       height="19.99062"
+       x="4.7948079"
+       y="17.89237"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_main.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.93888855px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="6.0695615"
+       y="22.911905"
+       id="text4045"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_main.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan4043"
+         x="6.0695615"
+         y="22.911905"
+         style="font-size:3.52777767px;stroke-width:0.26458332">1. Inicializar motor structs</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.93888855px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="6.093884"
+       y="28.723646"
+       id="text4045-1"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_main.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan4043-8"
+         x="6.093884"
+         y="28.723646"
+         style="font-size:3.52777767px;stroke-width:0.26458332">2. Configurar timers, puerto usart, cdacm, y systick</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.93888855px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="6.1313329"
+       y="34.307175"
+       id="text4045-1-7"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_main.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan4043-8-9"
+         x="6.1313329"
+         y="34.307175"
+         style="font-size:3.52777767px;stroke-width:0.26458332">3. Habilitar interrupciones systick</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 7.613614,38.004362 c 0,4.777444 0,8.485809 0,8.485809 h 4.242903"
+       id="path4087"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_main.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 8.5746412,48.384961 11.856517,46.490171 8.7006782,44.668146"
+       id="path4089"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_main.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.93888855px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="16.169807"
+       y="57.681915"
+       id="text4093"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_main.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan4091"
+         x="16.169807"
+         y="57.681915"
+         style="font-size:3.52777767px;stroke-width:0.26458332">if (poll(stdin&gt;0) {</tspan><tspan
+         sodipodi:role="line"
+         x="16.169807"
+         y="63.855526"
+         style="stroke-width:0.26458332"
+         id="tspan4095" /></text>
+    <rect
+       style="fill:none;fill-opacity:0.04705882;stroke:none;stroke-width:0.46499997;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4128"
+       width="54.42857"
+       height="31.938988"
+       x="20.694197"
+       y="65.111603"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_main.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="fill:none;fill-opacity:0.04705882;stroke:#000000;stroke-width:0.46499997;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4130"
+       width="35.529762"
+       height="6.9925594"
+       x="13.985119"
+       y="53.110859"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_main.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <flowRoot
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.93888855px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       id="flowRoot4140"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_main.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><flowRegion
+         id="flowRegion4142"><use
+           x="0"
+           y="0"
+           xlink:href="#rect4128"
+           id="use4144" /></flowRegion><flowPara
+         style="font-size:3.52777778px;text-anchor:start;text-align:start"
+         id="flowPara4146">update_global_pos = false;
+pid_updating = false;
+read_instruction();
+pid_updating = true;
+update_global_pos = true;
+</flowPara></flowRoot>    <rect
+       style="fill:none;fill-opacity:0.04705882;stroke:#000000;stroke-width:0.35682616;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4148"
+       width="58.334717"
+       height="32.159863"
+       x="16.78805"
+       y="64.890732"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_main.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 49.514881,56.418154 h 11.859003 v 7.417781"
+       id="path4214"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_main.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 59.479094,60.554059 1.89479,3.281876 1.822025,-3.155839"
+       id="path4089-3"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_main.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.93888855px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="64.444931"
+       y="59.063988"
+       id="text4233"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_main.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan4231"
+         x="64.444931"
+         y="59.063988"
+         style="stroke-width:0.26458332;font-size:3.175px;fill:#00ff07;fill-opacity:1">yes</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 11.592815,60.399649 H 4.3431296 v -5.87993 h 6.0135644"
+       id="path4235"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_main.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 7.0748182,56.414509 10.356694,54.519719 7.2008552,52.697694"
+       id="path4089-7"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_main.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.93888855px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="4.9410052"
+       y="63.875099"
+       id="text4233-5"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_main.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan4231-9"
+         x="4.9410052"
+         y="63.875099"
+         style="font-size:3.17499995px;stroke-width:0.26458332;fill:#ff0014;fill-opacity:1">no</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 42.696307,97.216028 c 0,0.400904 0,9.755332 0,9.755332 H 12.294398 V 65.811857 l 4.176087,-4.176085"
+       id="path4288"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_main.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 15.247009,65.084114 1.382115,-3.528556 -3.60298,0.545543"
+       id="path4089-7-2"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_main.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <ellipse
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.33620203;stroke-miterlimit:4;stroke-dasharray:0.67240408, 0.33620204;stroke-dashoffset:0;stroke-opacity:1"
+       id="path4305"
+       cx="86.753387"
+       cy="69.286354"
+       rx="15.490467"
+       ry="8.9179277"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_main.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:#ffffff;fill-opacity:0.98529412;stroke:#000000;stroke-width:0.26458332;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.52916663, 0.26458332;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 76.505901,73.6629 c -3.971147,6.878228 -4.066897,7.044071 -4.066897,7.044071 l 11.2254,-3.007836"
+       id="path4307"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_main.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.93888855px;line-height:2.17000008px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="73.900024"
+       y="68.217278"
+       id="text4311"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_main.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         x="73.900024"
+         y="68.217278"
+         style="font-size:2.11666656px;line-height:2.17000008px;stroke-width:0.26458332"
+         id="tspan4313">read instruction ejecuta </tspan><tspan
+         sodipodi:role="line"
+         x="73.900024"
+         y="71.120392"
+         style="font-size:2.11666656px;line-height:2.17000008px;stroke-width:0.26458332"
+         id="tspan4317">la instrucción solicitada</tspan></text>
+    <rect
+       style="fill:none;fill-opacity:0;stroke:#000000;stroke-width:0.11195666;stroke-miterlimit:4;stroke-dasharray:0.33586997, 0.11195665;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4010-2"
+       width="29.232227"
+       height="5.2934475"
+       x="111.91258"
+       y="31.593006"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_main.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.93888855px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="112.69919"
+       y="35.338585"
+       id="text4014-8"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_main.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan4012-9"
+         x="112.69919"
+         y="35.338585"
+         style="font-size:3.52777767px;stroke-width:0.26458332">systick_handler</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.93888855px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="115.11271"
+       y="41.870056"
+       id="text4045-3"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_main.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         x="115.11271"
+         y="41.870056"
+         style="font-size:3.52777767px;stroke-width:0.26458332"
+         id="tspan4365">1. Actualizar la información del encoder: </tspan><tspan
+         sodipodi:role="line"
+         x="115.11271"
+         y="48.043667"
+         style="font-size:3.52777767px;stroke-width:0.26458332"
+         id="tspan4371">encoder_update();</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.93888855px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="117.75091"
+       y="56.925968"
+       id="text4093-2"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_main.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan4091-9"
+         x="117.75091"
+         y="56.925968"
+         style="font-size:3.52777767px;stroke-width:0.26458332">if (update_global_pos == true) {</tspan><tspan
+         sodipodi:role="line"
+         x="117.75091"
+         y="63.099579"
+         style="stroke-width:0.26458332"
+         id="tspan4095-3" /></text>
+    <rect
+       style="fill:none;fill-opacity:0.04705882;stroke:#000000;stroke-width:0.57696962;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4130-1"
+       width="60.838554"
+       height="6.2870884"
+       x="115.55931"
+       y="52.799183"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_main.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="fill:none;fill-opacity:0;stroke:#000000;stroke-width:0.13924867;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect2999"
+       width="16.286343"
+       height="13.902974"
+       x="185.29317"
+       y="49.446209"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_main.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:2.59522152px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.13902973"
+       x="189.06682"
+       y="53.915024"
+       id="text3003"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_main.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan3001"
+         x="189.06682"
+         y="53.915024"
+         style="stroke-width:0.13902973">update </tspan><tspan
+         sodipodi:role="line"
+         x="189.06682"
+         y="57.15905"
+         style="stroke-width:0.13902973"
+         id="tspan3005">global </tspan><tspan
+         sodipodi:role="line"
+         x="189.06682"
+         y="60.403076"
+         style="stroke-width:0.13902973"
+         id="tspan3007">pos</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 177.13288,55.722432 c 7.08264,0 7.01582,0 7.01582,0"
+       id="path4473"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_main.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 180.86682,57.617222 3.28188,-1.89479 -3.15584,-1.822025"
+       id="path4089-7-9"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_main.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.93888855px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="178.028"
+       y="52.205452"
+       id="text4233-4"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_main.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan4231-7"
+         x="178.028"
+         y="52.205452"
+         style="font-size:3.17499995px;fill:#00ff07;fill-opacity:1;stroke-width:0.26458332">yes</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 198.94804,64.454875 v 11.859 h -7.41778"
+       id="path4214-4"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_main.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 194.81213,74.419085 -3.28187,1.89479 3.15584,1.82202"
+       id="path4089-3-5"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_main.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.93888855px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="141.04424"
+       y="76.791275"
+       id="text4093-2-0"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_main.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan4091-9-3"
+         x="141.04424"
+         y="76.791275"
+         style="font-size:3.52777767px;stroke-width:0.26458332">if (pid_updating == true) {</tspan><tspan
+         sodipodi:role="line"
+         x="141.04424"
+         y="82.964882"
+         style="stroke-width:0.26458332"
+         id="tspan4095-3-6" /></text>
+    <rect
+       style="fill:none;fill-opacity:0.04705882;stroke:#000000;stroke-width:0.48249206;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4130-1-1"
+       width="50.876369"
+       height="5.2575908"
+       x="139.92812"
+       y="73.085693"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_main.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="fill:none;fill-opacity:0;stroke:#000000;stroke-width:0.13924867;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect2999-0"
+       width="16.286343"
+       height="13.902974"
+       x="114.17091"
+       y="72.428726"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_main.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:2.59522152px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.13902973"
+       x="114.90186"
+       y="79.675659"
+       id="text3003-6"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_main.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         x="114.90186"
+         y="79.675659"
+         style="stroke-width:0.13902973"
+         id="tspan3007-0">pid_control</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 138.42643,75.794523 c -7.08264,0 -7.01582,0 -7.01582,0"
+       id="path4473-6"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_main.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 134.69249,77.689313 -3.28188,-1.89479 3.15584,-1.822024"
+       id="path4089-7-9-1"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_main.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.93888855px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="132.04117"
+       y="72.27755"
+       id="text4233-4-5"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_main.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan4231-7-5"
+         x="132.04117"
+         y="72.27755"
+         style="font-size:3.17499995px;fill:#00ff07;fill-opacity:1;stroke-width:0.26458332">yes</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 154.81587,60.052201 V 72.306507"
+       id="path4641"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_main.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 156.71066,69.024627 -1.89479,3.28188 -1.82203,-3.15584"
+       id="path4089-7-9-1-6"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_main.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.93888855px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="156.71368"
+       y="66.620781"
+       id="text4233-5-5"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_main.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan4231-9-6"
+         x="156.71368"
+         y="66.620781"
+         style="font-size:3.17499995px;fill:#ff0014;fill-opacity:1;stroke-width:0.26458332">no</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 164.91681,79.423903 V 91.678209"
+       id="path4641-9"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_main.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 166.8116,88.396329 -1.89479,3.28188 -1.82203,-3.15584"
+       id="path4089-7-9-1-6-3"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_main.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.93888855px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="166.81464"
+       y="85.992485"
+       id="text4233-5-5-7"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_main.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan4231-9-6-4"
+         x="166.81464"
+         y="85.992485"
+         style="font-size:3.17499995px;fill:#ff0014;fill-opacity:1;stroke-width:0.26458332">no</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 121.57437,86.643278 v 11.859 h 7.41778"
+       id="path4214-4-5"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_main.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 125.71028,96.607488 3.28187,1.89479 -3.15584,1.822022"
+       id="path4089-3-5-2"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_main.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.25400001;stroke-miterlimit:4;stroke-dasharray:0.50800001, 0.25400001, 0.127, 0.25400001;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4727"
+       width="49.765587"
+       height="7.4835467"
+       x="139.6617"
+       y="93.447525"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_main.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.93888855px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="142.74864"
+       y="98.311836"
+       id="text4731"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_main.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan4729"
+         x="142.74864"
+         y="98.311836"
+         style="font-size:3.52777767px;stroke-width:0.26458332">continue main execution</tspan></text>
+  </g>
+</svg>

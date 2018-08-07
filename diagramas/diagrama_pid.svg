@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.2 2405546, 2018-03-11"
+   sodipodi:docname="diagrama_pid.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4"
+     inkscape:cx="498.20236"
+     inkscape:cy="912.74485"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1052"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#010100;fill-opacity:0;stroke:#000000;stroke-width:0.16318399;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect817"
+       width="34.622402"
+       height="5.0990124"
+       x="14.263349"
+       y="39.08284"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_pid.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.93888855px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="14.91528"
+       y="42.760544"
+       id="text821"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_pid.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan819"
+         x="14.91528"
+         y="42.760544"
+         style="font-size:3.52777767px;stroke-width:0.26458332">Velocidad deseada</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.19140697px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 63.662482,41.824417 c 0.664407,0 16.050654,0 16.050654,0 l -1.179399,1.301097 1.179399,-1.301097 -1.266193,-1.396846 0.04229,-0.139953"
+       id="path823"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_pid.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="fill:#010100;fill-opacity:0;stroke:#000000;stroke-width:0.23389763;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect825"
+       width="22.21447"
+       height="11.723807"
+       x="81.368019"
+       y="38.935719"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_pid.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.88055556px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332;"
+       x="87.397133"
+       y="41.623966"
+       id="text829"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_pid.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan827"
+         x="87.397133"
+         y="45.993725"
+         style="stroke-width:0.26458332;font-size:3.88055556px;" /></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.52777767px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="82.217804"
+       y="42.992741"
+       id="text833"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_pid.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan831"
+         x="82.217804"
+         y="42.992741"
+         style="font-size:3.52777767px;stroke-width:0.26458332">Controlador</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.52777767px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="67.752831"
+       y="39.418991"
+       id="text837"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_pid.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan835"
+         x="67.752831"
+         y="39.418991"
+         style="font-size:3.52777767px;stroke-width:0.26458332">error</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.29472268px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 103.82053,41.603664 h 28.83537 l -3.34529,1.470038"
+       id="path839"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_pid.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.292752px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 132.6559,41.603664 -3.18079,-1.500029"
+       id="path841"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_pid.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.52777767px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="104.57495"
+       y="39.135296"
+       id="text837-3"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_pid.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan835-6"
+         x="104.57495"
+         y="39.135296"
+         style="font-size:3.175px;stroke-width:0.26458332">señal de control</tspan></text>
+    <rect
+       style="fill:#010100;fill-opacity:0;stroke:#000000;stroke-width:0.15048838;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect861"
+       width="20.538965"
+       height="4.7236443"
+       x="132.93141"
+       y="39.260197"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_pid.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.93888855px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="135.10619"
+       y="42.714382"
+       id="text865"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_pid.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan863"
+         x="135.10619"
+         y="42.714382"
+         style="font-size:3.52777767px;stroke-width:0.26458332">Roboclaw</tspan></text>
+    <rect
+       style="fill:#010100;fill-opacity:0;stroke:#000000;stroke-width:0.26499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect867"
+       width="21.817644"
+       height="6.0591154"
+       x="159.65837"
+       y="38.772083"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_pid.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.93888855px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="165.3062"
+       y="42.960308"
+       id="text871"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_pid.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan869"
+         x="165.3062"
+         y="42.960308"
+         style="font-size:3.52777767px;stroke-width:0.26458332">Motor</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 169.78218,31.471726 c 0,5.575149 0,5.551525 0,5.551525 l 0.73431,-1.271855"
+       id="path873"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_pid.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 169.78218,37.023251 169.04946,35.75414"
+       id="path879"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_pid.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 153.97116,41.827382 c 0.73499,0 5.07812,0 5.07812,0"
+       id="path881"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_pid.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 159.04928,41.827382 -1.32827,0.766879"
+       id="path885"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_pid.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 159.04928,41.827382 -1.36444,-0.78776"
+       id="path887"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_pid.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.52777767px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="160.25822"
+       y="30.131165"
+       id="text837-3-7"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_pid.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan835-6-5"
+         x="160.25822"
+         y="30.131165"
+         style="font-size:3.17499995px;stroke-width:0.26458332">perturbación</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 181.81009,41.824417 c 10.28988,0 10.22306,0 10.22306,0 v 53.387088 h -31.40417 l 1.2203,-0.704538"
+       id="path911"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_pid.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 160.62898,95.211505 1.10948,0.640561"
+       id="path913"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_pid.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.52777767px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="166.49481"
+       y="100.15125"
+       id="text837-3-3"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_pid.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan835-6-56"
+         x="166.49481"
+         y="100.15125"
+         style="font-size:3.17499995px;stroke-width:0.26458332">velocidad</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.52777767px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="83.82077"
+       y="47.905941"
+       id="text833-1"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_pid.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan831-2"
+         x="83.82077"
+         y="47.905941"
+         style="font-size:3.52777767px;stroke-width:0.26458332">(stm32f4)</tspan></text>
+    <rect
+       style="fill:#010100;fill-opacity:0;stroke:#000000;stroke-width:0.15048839;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect861-7"
+       width="20.538965"
+       height="4.7236443"
+       x="139.50359"
+       y="93.082375"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_pid.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.93888855px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="142.34653"
+       y="96.603371"
+       id="text865-0"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_pid.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan863-9"
+         x="142.34653"
+         y="96.603371"
+         style="font-size:3.52777767px;stroke-width:0.26458332">Encoder</tspan></text>
+    <rect
+       style="fill:#010100;fill-opacity:0;stroke:#000000;stroke-width:0.26499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect990"
+       width="27.59226"
+       height="11.339286"
+       x="83.214043"
+       y="90.136314"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_pid.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.29472268px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 139.55902,95.313777 h -28.83537 l 3.34529,1.470038"
+       id="path839-3"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_pid.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.292752px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 110.72365,95.313777 3.18079,-1.500029"
+       id="path841-6"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_pid.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.52777767px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="88.312172"
+       y="99.370407"
+       id="text833-1-2"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_pid.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan831-2-6"
+         x="88.312172"
+         y="99.370407"
+         style="font-size:3.52777767px;stroke-width:0.26458332">(stm32f4)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.52777767px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="90.592476"
+       y="94.501595"
+       id="text833-1-2-1"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_pid.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan831-2-6-8"
+         x="90.592476"
+         y="94.501595"
+         style="font-size:3.52777767px;stroke-width:0.26458332">Systick</tspan></text>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot1052"
+       style="fill:black;fill-opacity:1;stroke:none;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:18.66666667px;line-height:1.25;letter-spacing:0px;word-spacing:0px"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_pid.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><flowRegion
+         id="flowRegion1054"><rect
+           id="rect1056"
+           width="135.86552"
+           height="72.73098"
+           x="297.48993"
+           y="325.00424" /></flowRegion><flowPara
+         id="flowPara1058"></flowPara></flowRoot>    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.52777767px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="188.825"
+       y="39.553436"
+       id="text837-3-3-7"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_pid.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan835-6-56-9"
+         x="188.825"
+         y="39.553436"
+         style="font-size:3.17499995px;stroke-width:0.26458332">velocidad</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 192.03315,41.824417 c 0.73499,0 5.07812,0 5.07812,0"
+       id="path881-2"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_pid.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 197.11127,41.824417 195.783,42.591296"
+       id="path885-0"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_pid.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 197.11127,41.824417 -1.36444,-0.78776"
+       id="path887-2"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_pid.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.2644811px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 83.338819,96.105653 c -15.963322,0 -24.558958,0 -24.558958,0 v -46.75648 l -0.948849,1.643454"
+       id="path1433"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_pid.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 58.732478,49.232795 c 0.970193,1.680421 0.970399,1.680779 0.970399,1.680779"
+       id="path1437"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_pid.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <ellipse
+       style="fill:#010100;fill-opacity:0;stroke:#000000;stroke-width:0.26499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path1439"
+       cx="59.011528"
+       cy="42.007809"
+       rx="4.4884672"
+       ry="4.7719498"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_pid.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 49.261114,41.540443 c 3.107007,0 4.526878,0 4.526878,0 l -1.230885,0.710652"
+       id="path1441"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_pid.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 53.787992,41.540443 Z"
+       id="path1443"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_pid.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 53.787992,41.540443 52.564339,40.833968"
+       id="path1445"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_pid.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.93888855px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="63.409695"
+       y="49.909325"
+       id="text1449"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_pid.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan1447"
+         x="63.409695"
+         y="49.909325"
+         style="stroke-width:0.26458332">+</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.93888855px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="53.387089"
+       y="36.679478"
+       id="text1453"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_pid.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan1451"
+         x="53.387089"
+         y="36.679478"
+         style="stroke-width:0.26458332">-</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.0805068px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.21859859"
+       x="58.248627"
+       y="99.492447"
+       id="text1457"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_pid.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         x="58.248627"
+         y="99.492447"
+         style="font-size:2.91464806px;stroke-width:0.21859859"
+         id="tspan1459"><tspan
+   id="tspan1461"
+   style="font-size:2.91464806px;line-height:1.60282695px;stroke-width:0.21859859">velocidad </tspan>real</tspan></text>
+  </g>
+</svg>

@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg5300"
+   inkscape:version="0.92.2 2405546, 2018-03-11"
+   sodipodi:docname="diagrama_rosnode.svg">
+  <defs
+     id="defs5294">
+    <linearGradient
+       id="linearGradient4022"
+       osb:paint="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop4020" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4022"
+       id="linearGradient4024"
+       x1="2.7023215"
+       y1="12.950892"
+       x2="46.623569"
+       y2="12.950892"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.0796002,0,0,0.65738869,4.0509409,17.625995)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4022"
+       id="linearGradient4024-4"
+       x1="2.7023215"
+       y1="12.950892"
+       x2="46.623569"
+       y2="12.950892"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.493395,0,0,0.57859572,108.41619,18.668144)" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4"
+     inkscape:cx="463.38632"
+     inkscape:cy="808.41159"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1052"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5297">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.23376386;stroke-miterlimit:4;stroke-dasharray:0.46752772, 0.23376386, 0.11688193, 0.23376386;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4319"
+       width="95.083267"
+       height="65.204636"
+       x="4.7752476"
+       y="19.81629"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_main.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.93888855px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="8.3794785"
+       y="27.319538"
+       id="text4028"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_main.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan4026"
+         x="8.3794785"
+         y="27.319538"
+         style="stroke-width:0.26458332">omnidirecional.py</tspan></text>
+    <rect
+       style="fill:none;fill-opacity:0;stroke:url(#linearGradient4024);stroke-width:0.39173785;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4018"
+       width="47.131306"
+       height="8.1997499"
+       x="7.1114197"
+       y="22.03989"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_main.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.52777767px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="13.096207"
+       y="35.610401"
+       id="text6999"><tspan
+         sodipodi:role="line"
+         id="tspan6997"
+         x="13.096207"
+         y="35.610401"
+         style="stroke-width:0.26458332;opacity:0.429;fill:#686868;fill-opacity:0.60294116">#Este es el nodo del robot, que se subscribe a </tspan><tspan
+         sodipodi:role="line"
+         x="13.096207"
+         y="40.020123"
+         style="stroke-width:0.26458332;opacity:0.429;fill:#686868;fill-opacity:0.60294116"
+         id="tspan7001">cmd_vel, y publica odom, junto con tf</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.52777767px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="13.085582"
+       y="52.586102"
+       id="text6999-4"><tspan
+         sodipodi:role="line"
+         x="13.085582"
+         y="52.586102"
+         style="stroke-width:0.26458332"
+         id="tspan7001-4">spin(self):</tspan><tspan
+         sodipodi:role="line"
+         x="13.085582"
+         y="56.995823"
+         style="stroke-width:0.26458332"
+         id="tspan7067" /></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.52777767px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="19.439936"
+       y="57.485886"
+       id="text6999-4-7"><tspan
+         sodipodi:role="line"
+         x="19.439936"
+         y="57.485886"
+         style="stroke-width:0.26458332"
+         id="tspan7001-4-8">rate = 100 Hz</tspan><tspan
+         sodipodi:role="line"
+         x="19.439936"
+         y="61.895607"
+         style="stroke-width:0.26458332"
+         id="tspan7090">self.robot.set_motors(self.cmd_vel)</tspan><tspan
+         sodipodi:role="line"
+         x="19.439936"
+         y="66.305328"
+         style="stroke-width:0.26458332"
+         id="tspan7092">pos = self.robot.read_global_pos()</tspan><tspan
+         sodipodi:role="line"
+         x="19.439936"
+         y="70.71505"
+         style="stroke-width:0.26458332"
+         id="tspan7094">vels = self.robot.read_global_vel()</tspan><tspan
+         sodipodi:role="line"
+         x="19.439936"
+         y="75.124771"
+         style="stroke-width:0.26458332"
+         id="tspan7096">odomPub.publish(odom)</tspan><tspan
+         sodipodi:role="line"
+         x="19.439936"
+         y="79.534492"
+         style="stroke-width:0.26458332"
+         id="tspan7100">odomBroadcaster.sendTransform()</tspan><tspan
+         sodipodi:role="line"
+         x="19.439936"
+         y="83.944221"
+         style="stroke-width:0.26458332"
+         id="tspan7104" /><tspan
+         sodipodi:role="line"
+         x="19.439936"
+         y="88.353943"
+         style="stroke-width:0.26458332"
+         id="tspan7067-6" /></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.52777767px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="13.263768"
+       y="47.375027"
+       id="text6999-4-8"><tspan
+         sodipodi:role="line"
+         x="13.263768"
+         y="47.375027"
+         style="stroke-width:0.26458332;fill:#ff0000;fill-opacity:1"
+         id="tspan7001-4-84">from omnidirectional_driver import omni</tspan><tspan
+         sodipodi:role="line"
+         x="13.263768"
+         y="51.784748"
+         style="stroke-width:0.26458332"
+         id="tspan7067-3" /></text>
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.23376386;stroke-miterlimit:4;stroke-dasharray:0.46752772, 0.23376386, 0.11688193, 0.23376386;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4319-1"
+       width="95.083267"
+       height="65.204636"
+       x="110.6414"
+       y="19.658096"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_main.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.93888855px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="113.87623"
+       y="27.43574"
+       id="text4028-2"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_main.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan4026-0"
+         x="113.87623"
+         y="27.43574"
+         style="stroke-width:0.26458332">omnidirectional_driver.py</tspan></text>
+    <rect
+       style="fill:none;fill-opacity:0;stroke:url(#linearGradient4024-4);stroke-width:0.43224293;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4018-6"
+       width="65.196037"
+       height="7.2169485"
+       x="112.6497"
+       y="22.552998"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_main.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.52777767px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="114.40646"
+       y="51.343777"
+       id="text6999-4-89"><tspan
+         sodipodi:role="line"
+         x="114.40646"
+         y="51.343777"
+         style="stroke-width:0.26458332"
+         id="tspan7001-4-2">class omni():</tspan><tspan
+         sodipodi:role="line"
+         x="114.40646"
+         y="55.753498"
+         style="stroke-width:0.26458332"
+         id="tspan7195" /><tspan
+         sodipodi:role="line"
+         x="114.40646"
+         y="60.163219"
+         style="stroke-width:0.26458332"
+         id="tspan7197">   def set_motors(self, cmd_vel):</tspan><tspan
+         sodipodi:role="line"
+         x="114.40646"
+         y="64.572945"
+         style="stroke-width:0.26458332"
+         id="tspan7199">        </tspan><tspan
+         sodipodi:role="line"
+         x="114.40646"
+         y="68.982666"
+         style="stroke-width:0.26458332"
+         id="tspan7201">   def read_global_pos(self)</tspan><tspan
+         sodipodi:role="line"
+         x="114.40646"
+         y="73.392387"
+         style="stroke-width:0.26458332"
+         id="tspan7203">   </tspan><tspan
+         sodipodi:role="line"
+         x="114.40646"
+         y="77.802109"
+         style="stroke-width:0.26458332"
+         id="tspan7205">   def read_global_vel(self)</tspan><tspan
+         sodipodi:role="line"
+         x="114.40646"
+         y="82.21183"
+         style="stroke-width:0.26458332"
+         id="tspan7193" /><tspan
+         sodipodi:role="line"
+         x="114.40646"
+         y="86.621552"
+         style="stroke-width:0.26458332"
+         id="tspan7067-66" /></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.52777767px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="117.53546"
+       y="35.671665"
+       id="text6999-49"><tspan
+         sodipodi:role="line"
+         x="117.53546"
+         y="35.671665"
+         style="opacity:0.42900002;fill:#686868;fill-opacity:0.60294118;stroke-width:0.26458332"
+         id="tspan7001-0">#Esta clase utiliza pyserial para comunicarse</tspan><tspan
+         sodipodi:role="line"
+         x="117.53546"
+         y="40.081387"
+         style="opacity:0.42900002;fill:#686868;fill-opacity:0.60294118;stroke-width:0.26458332"
+         id="tspan7230">por USB con el stm32f411 e intercambiar info</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 49.51168,86.191158 V 100.49008"
+       id="path7232"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 47.61689,97.2082 1.89479,3.28188 1.822025,-3.155843"
+       id="path4089-3"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_main.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 70.372239,100.88667 V 86.587751"
+       id="path7232-4"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 68.477449,89.869629 1.89479,-3.281878 1.822025,3.155841"
+       id="path4089-3-8"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_main.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.52777767px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="35.413212"
+       y="95.077866"
+       id="text7269"><tspan
+         sodipodi:role="line"
+         id="tspan7267"
+         x="35.413212"
+         y="95.077866"
+         style="stroke-width:0.26458332">\odom</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.52777767px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="72.535217"
+       y="95.45256"
+       id="text7269-7"><tspan
+         sodipodi:role="line"
+         id="tspan7267-1"
+         x="72.535217"
+         y="95.45256"
+         style="stroke-width:0.26458332">\cmd_vel</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 23.186187,86.326137 V 100.62506"
+       id="path7232-7"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 21.291397,97.343179 1.89479,3.281881 1.822025,-3.155844"
+       id="path4089-3-2"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_main.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.52777767px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="15.903092"
+       y="94.945572"
+       id="text7269-72"><tspan
+         sodipodi:role="line"
+         id="tspan7267-2"
+         x="15.903092"
+         y="94.945572"
+         style="stroke-width:0.26458332">\tf</tspan></text>
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.09051527;stroke-miterlimit:4;stroke-dasharray:0.18103054, 0.09051527, 0.04525764, 0.09051527;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4319-6"
+       width="94.467499"
+       height="9.8398628"
+       x="4.7395077"
+       y="102.33601"
+       inkscape:export-filename="/home/sleal/UCR/proyecto_electrico/slam_arcoslab/imagenes/diagrama_main.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.52777767px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="44.695683"
+       y="108.76786"
+       id="text7330"><tspan
+         sodipodi:role="line"
+         id="tspan7328"
+         x="44.695683"
+         y="108.76786"
+         style="stroke-width:0.26458332">Ros core</tspan></text>
+  </g>
+</svg>
