@@ -1,0 +1,96 @@
+\changetocdepth {2}
+\babel@toc {spanish}{}
+\contentsline {chapter}{\'{I}ndice general}{v}{section*.1}% 
+\contentsline {chapter}{\'{I}ndice de figuras}{vii}{section*.2}% 
+\contentsline {chapter}{\'{I}ndice de cuadros}{x}{section*.3}% 
+\contentsline {chapter}{\chapternumberline {1}Introducci\IeC {\'o}n}{1}{chapter.1}% 
+\contentsline {section}{\numberline {1.1}Alcance}{2}{section.1.1}% 
+\contentsline {subsection}{\numberline {1.1.1}Equipo}{2}{subsection.1.1.1}% 
+\contentsline {subsection}{\numberline {1.1.2}Herramientas}{3}{subsection.1.1.2}% 
+\contentsline {subsection}{\numberline {1.1.3}Resultados}{3}{subsection.1.1.3}% 
+\contentsline {section}{\numberline {1.2}Justificaci\IeC {\'o}n}{3}{section.1.2}% 
+\contentsline {section}{\numberline {1.3}Objetivos}{3}{section.1.3}% 
+\contentsline {subsection}{\numberline {1.3.1}Objetivo general}{3}{subsection.1.3.1}% 
+\contentsline {subsection}{\numberline {1.3.2}Objetivos espec\IeC {\'\i }ficos}{3}{subsection.1.3.2}% 
+\contentsline {section}{\numberline {1.4}Metodolog\IeC {\'\i }a}{4}{section.1.4}% 
+\contentsline {chapter}{\chapternumberline {2}Nota te\IeC {\'o}rica}{5}{chapter.2}% 
+\contentsline {section}{\numberline {2.1}Movilidad}{6}{section.2.1}% 
+\contentsline {subsection}{\numberline {2.1.1}Ruedas}{6}{subsection.2.1.1}% 
+\contentsline {subsection}{\numberline {2.1.2}Motores}{7}{subsection.2.1.2}% 
+\contentsline {subsection}{\numberline {2.1.3}Encoder}{8}{subsection.2.1.3}% 
+\contentsline {section}{\numberline {2.2}Visi\IeC {\'o}n}{9}{section.2.2}% 
+\contentsline {subsection}{\numberline {2.2.1}Profundidad}{9}{subsection.2.2.1}% 
+\contentsline {subsection}{\numberline {2.2.2}Color}{10}{subsection.2.2.2}% 
+\contentsline {section}{\numberline {2.3}Autonom\IeC {\'\i }a}{10}{section.2.3}% 
+\contentsline {subsection}{\numberline {2.3.1}Mapeo}{10}{subsection.2.3.1}% 
+\contentsline {subsection}{\numberline {2.3.2}Localizaci\IeC {\'o}n}{12}{subsection.2.3.2}% 
+\contentsline {subsection}{\numberline {2.3.3}Navegaci\IeC {\'o}n}{13}{subsection.2.3.3}% 
+\contentsline {chapter}{\chapternumberline {3}Infraestructura Existente}{15}{chapter.3}% 
+\contentsline {section}{\numberline {3.1}Carrito omnidireccional}{16}{section.3.1}% 
+\contentsline {section}{\numberline {3.2}Motores}{16}{section.3.2}% 
+\contentsline {section}{\numberline {3.3}Controladores}{17}{section.3.3}% 
+\contentsline {section}{\numberline {3.4}Microcontrolador}{19}{section.3.4}% 
+\contentsline {section}{\numberline {3.5}Hokuyo}{20}{section.3.5}% 
+\contentsline {section}{\numberline {3.6}Control de PS4}{21}{section.3.6}% 
+\contentsline {chapter}{\chapternumberline {4}Dise\IeC {\~n}o}{23}{chapter.4}% 
+\contentsline {section}{\numberline {4.1}Justificaci\IeC {\'o}n de dise\IeC {\~n}o}{24}{section.4.1}% 
+\contentsline {subsection}{\numberline {4.1.1}Hardware}{24}{subsection.4.1.1}% 
+\contentsline {subsection}{\numberline {4.1.2}Software}{24}{subsection.4.1.2}% 
+\contentsline {section}{\numberline {4.2}Diagrama el\IeC {\'e}ctrico}{25}{section.4.2}% 
+\contentsline {section}{\numberline {4.3}C\IeC {\'o}digo del stm32f411}{26}{section.4.3}% 
+\contentsline {subsection}{\numberline {4.3.1}Librer\IeC {\'\i }a de comunicaci\IeC {\'o}n}{26}{subsection.4.3.1}% 
+\contentsline {subsection}{\numberline {4.3.2}Encoder}{29}{subsection.4.3.2}% 
+\contentsline {subsection}{\numberline {4.3.3}Control PID}{30}{subsection.4.3.3}% 
+\contentsline {subsection}{\numberline {4.3.4}Protocolo de comunicaci\IeC {\'o}n USB}{31}{subsection.4.3.4}% 
+\contentsline {subsection}{\numberline {4.3.5}Odometr\IeC {\'\i }a Real del robot}{32}{subsection.4.3.5}% 
+\contentsline {subsection}{\numberline {4.3.6}Diagrama completo del c\IeC {\'o}digo}{34}{subsection.4.3.6}% 
+\contentsline {section}{\numberline {4.4}C\IeC {\'o}digo de la computadora principal}{35}{section.4.4}% 
+\contentsline {subsection}{\numberline {4.4.1}Sensores l\IeC {\'a}ser}{35}{subsection.4.4.1}% 
+\contentsline {subsection}{\numberline {4.4.2}Odometr\IeC {\'\i }a}{35}{subsection.4.4.2}% 
+\contentsline {subsection}{\numberline {4.4.3}\IeC {\'A}rbol de Tf}{36}{subsection.4.4.3}% 
+\contentsline {subsection}{\numberline {4.4.4}Comandos de velocidad de la base}{37}{subsection.4.4.4}% 
+\contentsline {chapter}{\chapternumberline {5}Implementaci\IeC {\'o}n}{39}{chapter.5}% 
+\contentsline {section}{\numberline {5.1}Kinect}{40}{section.5.1}% 
+\contentsline {subsection}{\numberline {5.1.1}Instalaci\IeC {\'o}n del software}{40}{subsection.5.1.1}% 
+\contentsline {subsection}{\numberline {5.1.2}Calibraci\IeC {\'o}n del Kinect}{41}{subsection.5.1.2}% 
+\contentsline {subsection}{\numberline {5.1.3}Pruebas de funcionamiento}{41}{subsection.5.1.3}% 
+\contentsline {subsection}{\numberline {5.1.4}Problemas}{44}{subsection.5.1.4}% 
+\contentsline {section}{\numberline {5.2}Hokuyo}{44}{section.5.2}% 
+\contentsline {subsection}{\numberline {5.2.1}Instalaci\IeC {\'o}n del software}{44}{subsection.5.2.1}% 
+\contentsline {subsection}{\numberline {5.2.2}Pruebas de funcionamiento}{45}{subsection.5.2.2}% 
+\contentsline {subsection}{\numberline {5.2.3}Problemas}{45}{subsection.5.2.3}% 
+\contentsline {section}{\numberline {5.3}Conexi\IeC {\'o}n de un STM32F4 y un roboclaw}{45}{section.5.3}% 
+\contentsline {subsection}{\numberline {5.3.1}Conexi\IeC {\'o}n}{46}{subsection.5.3.1}% 
+\contentsline {subsection}{\numberline {5.3.2}Problemas}{48}{subsection.5.3.2}% 
+\contentsline {section}{\numberline {5.4}Encodificador de cuadratura}{49}{section.5.4}% 
+\contentsline {subsection}{\numberline {5.4.1}Conexi\IeC {\'o}n}{49}{subsection.5.4.1}% 
+\contentsline {subsection}{\numberline {5.4.2}Programaci\IeC {\'o}n}{50}{subsection.5.4.2}% 
+\contentsline {subsection}{\numberline {5.4.3}Problemas}{50}{subsection.5.4.3}% 
+\contentsline {section}{\numberline {5.5}Controlador PID}{52}{section.5.5}% 
+\contentsline {subsection}{\numberline {5.5.1}Impelementaci\IeC {\'o}n}{53}{subsection.5.5.1}% 
+\contentsline {subsection}{\numberline {5.5.2}Sintonizaci\IeC {\'o}n}{53}{subsection.5.5.2}% 
+\contentsline {subsection}{\numberline {5.5.3}Problemas}{53}{subsection.5.5.3}% 
+\contentsline {subsection}{\numberline {5.5.4}Gr\IeC {\'a}ficas}{53}{subsection.5.5.4}% 
+\contentsline {section}{\numberline {5.6}Ensamble de la base}{56}{section.5.6}% 
+\contentsline {subsection}{\numberline {5.6.1}Problemas}{58}{subsection.5.6.1}% 
+\contentsline {subsection}{\numberline {5.6.2}Pruebas de movimiento}{58}{subsection.5.6.2}% 
+\contentsline {section}{\numberline {5.7}Protocolo de comunicaci\IeC {\'o}n hacia la PC}{58}{section.5.7}% 
+\contentsline {subsection}{\numberline {5.7.1}Prototipos y problemas}{58}{subsection.5.7.1}% 
+\contentsline {subsection}{\numberline {5.7.2}Libopencm3-plus}{59}{subsection.5.7.2}% 
+\contentsline {subsection}{\numberline {5.7.3}Problemas}{59}{subsection.5.7.3}% 
+\contentsline {section}{\numberline {5.8}Implementaci\IeC {\'o}n del paquete en ROS}{59}{section.5.8}% 
+\contentsline {section}{\numberline {5.9}C\IeC {\'a}lculo de la odometr\IeC {\'\i }a}{61}{section.5.9}% 
+\contentsline {subsection}{\numberline {5.9.1}Problemas}{61}{subsection.5.9.1}% 
+\contentsline {section}{\numberline {5.10}Pruebas y correci\IeC {\'o}n de problemas}{62}{section.5.10}% 
+\contentsline {section}{\numberline {5.11}DualShock 4 en ROS}{62}{section.5.11}% 
+\contentsline {section}{\numberline {5.12}Implementaci\IeC {\'o}n de Navegaci\IeC {\'o}n}{64}{section.5.12}% 
+\contentsline {subsection}{\numberline {5.12.1}Configuraci\IeC {\'o}n}{65}{subsection.5.12.1}% 
+\contentsline {subsection}{\numberline {5.12.2}Resultados del mapeo}{66}{subsection.5.12.2}% 
+\contentsline {subsection}{\numberline {5.12.3}Problemas}{67}{subsection.5.12.3}% 
+\contentsline {chapter}{\chapternumberline {6}Conclusiones y recomendaciones}{73}{chapter.6}% 
+\contentsline {section}{\numberline {6.1}Conclusiones}{73}{section.6.1}% 
+\contentsline {section}{\numberline {6.2}Recomendaciones}{74}{section.6.2}% 
+\contentsline {appendix}{\chapternumberline {A}Actobotics 638276}{75}{appendix.Alph1}% 
+\contentsline {appendix}{\chapternumberline {B}STM32F4 Encoder}{77}{appendix.Alph2}% 
+\contentsline {appendix}{\chapternumberline {C}Roboclaw Instrucciones}{81}{appendix.Alph3}% 
+\contentsline {chapter}{Bibliograf\'{\i }a}{85}{appendix*.67}% 

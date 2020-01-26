@@ -115,13 +115,12 @@ Un encoder es un dispositivo que se encuentra comunmente en sistemas de control 
 
 Por otra parte, los encoders incrementales, producen un pulso en cada incremento, sin enmbargo no hacen distinción entre los incrementos \cite{Golnaraghi2017}.
 
-En específico, un encoder de quadratura, posee dos sensores a un cierto desfase entre ellos, generalmente de $90^\circ$ . La figura \ref{F:encoder} muestra un ejemplo de un tipo de encoder utilizando luz, y un ejemplo de una señal producida por un encoder incremental de quadratura.
+En específico, un encoder de quadratura, posee dos sensores a un cierto desfase entre ellos, generalmente de $90^\circ$ . La figura \ref{F:encoder} muestra un ejemplo de un encoder utilizando un Hall Sensor. Este sensor es magnético, y produce la señal por una inducción que provoca el imán en dos sensores al girar.
 
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.5]{imagenes/encoder_quadratura.png}
-\includegraphics[scale=0.5]{imagenes/encoder_opto.png}
-\caption{Ejemplo de un encoder utilizando luz, y la señal producida por un encoder de cuadratura. Tomado de \cite{Golnaraghi2017}.}
+\includegraphics[scale=0.3]{imagenes/quad1.jpg}
+\caption{Ejemplo de un encoder utilizando un Hall Sensor, y la señal producida por un encoder de cuadratura. Tomado de \cite{Golnaraghi2017}.}
 \label{F:encoder}
 \end{figure}
 
@@ -141,7 +140,7 @@ A continuación se muestra en la figura \ref{F:pointcloud} una muestra de la sal
 
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.3]{imagenes/rviz_pointcloud.png}
+\includegraphics[scale=0.4]{imagenes/rviz_pointcloud.png}
 \caption{Imagen de una captura de un sensor de profundidad. Tomado de \cite{Rusu2011}.}
 \label{F:pointcloud}
 \end{figure}
@@ -163,6 +162,50 @@ El objetivo del mapeo en un robot autónomo es aprender del entorno que rodea el
 
 Existen librerías que contienen la programación necesaria para realizar mapeo en un robot. Un ejemplo, es la librería denominada Navigation Stack, en el entorno de Ros. ROS (Robot Operating System), es un set de librerías, herramientas y convenciones que tratan de simplificar la tarea de crear comportamientos robóticos complejos y robustos a través de una amplia variedad de plataformas robóticas \cite{Quigley2009}.
 
+La libreríad de ROS, posee un módulo llamado \textit{gmapping}, cómo parte del ``Navigation Stack''. De acuerdo con lo mencionado en \cite{Abbeel2006}, es un algoritmo que utiliza \textit{particle filter} (filtrado de partículas) de Rao-Blackwellized para realizar un mapeo a partir de sensores del tipo \textit{laser range}.
+
+Esta solución ha probado ser muy eficiente, para ser utilizada en resolver el problema de mapeo y localización simultanea. El algoritmo utiliza un filtro de partículas, en el cuál cada partícula contiene un mapa individual del ambiente. Correspondientemente, la pregunta clave es cómo reducir la cantidad de partículas. El algoritmo en gmapping propone un acercamiento al problema que utiliza una distribución precisa que toma en cuenta no sólo el movimiento del robot, pero también la observación más reciente. Esto decrementa drásticamente la incertidumbre de la posición del robot, en el paso de la predicción del filtro \cite{Grisetti2007}. La figura \ref{F:mapa} muestra el ejemplo de un mapa generado por este módulo de ROS en el laboratorio de investigaciones de la Universidad de Texa.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.3]{imagenes/intel3d.jpg}
+\caption{Mapa del edificio ACES en la universidad de Texas, cuarto piso. Tomado de \cite{Grisetti2007}.}
+\label{F:mapa}
+\end{figure}
+
+De los mapas generados por Gmapping, las secciones grises son secciones desconocidas, o inexploradas. Las secciones en blanco son secciones bien conocidas que no posee obstáculos. Las secciones negras, son secciones que poseen obstáculos. La figura \ref{F:mapeando} muestra una visualización del proceso de mapeo en tiempo real, utilizando Rviz.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.4]{imagenes/map-gmapping.png}
+\caption{Proceso de mapeo en tiempo real. Tomado de \cite{Grisetti2007}.}
+\label{F:mapeando}
+\end{figure}
+
+\subsection{Localización}
+
+El proceso de localización hace referencia a ubicar la posición del robot, relativa al mundo. Por lo tanto, se requiere de tener un mundo en el cuál localizarse. Este proceso se basa primariamente en la información de la odometría de las ruedas, tomado de lo que serían los encoders de los motores. La figura \ref{F:acml1} muestra un diagrama de este proceso. Sin embargo, siempre existe un pequeño nivel de error en la odometría, que puede ser causado por el deslizamiento, y otros problemas similares.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.4]{imagenes/diagrama_amcl.png}
+\caption{Diagrama del proceso de localización utilizando únicamente la odometría de las ruedas. Tomado de \cite{ROSAMCL}.}
+\label{F:acml1}
+\end{figure}
+
+Se debe por lo tanto utilizar alguna otra fuente de información para corregir los posibles deslizamientos que puede sufrir el robot, y tener una posición real del robot en el mundo. Existen varias formas de hacer esto, sin embargo el ``Navigation Stack'' utiliza un módulo llamado \textit{amcl}, para la localización.
+
+\textit{Amcl} es un sistema de localización probablilística para un robot en movimiento de 2-D. Implementa el modelo adaptativo de localización Monte Carlo, como fué descrito por Dieter Fox, el cúal utiliza un filtro de partículas para llevar un record de la posición del robot contra un mapa conocido. La figura \ref{F:amcl} muestra el proceso de localización, utilizando la información de los nodos activos en ROS.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.4]{imagenes/mapa_amcl.png}
+\caption{Diagrama del proceso de estimación de la posición realizado por ACML. Tomade de \cite{ROSAMCL}.}
+\label{F:amcl}
+\end{figure}
+
+En otras palabras, AMCL trata de relacionar los \textit{laser scans} con el mapa, y así detecta si ha ocurrido alguna desviación  en la estimación de la pose basado en la odometría. Este ``deslizamiento'' es compensado publicando una transformación entre el marco del mapa, y el marco de la odometría, tal que el final la transformación del mapa hacia la base corresponda con la posición real del robot en el mundo.
+
 
 \subsection{Navegación}
 
@@ -174,3 +217,14 @@ Finalmente, se necesita un sensor de profundidad, como se habló anteriormente. 
 
 Igual que para el caso del mapeo, la librería de Navigation Stack en ROS continen la programación necesaria para realizar navegación, siempre y cuando el robot cumpla con las características anteriormente descritas.
 
+El Stack de Navegación de ROS requiere dos mapas de costos, uno local y otro global, los cuáles contienen la información que representa la proyección de obstáculos in un plano 2D, así como un un radio de seguridad, donde se garantíza que el robot no colisionará con ningún otro objeto, sin importar su orientación \cite{Longhi}.
+
+La navegación se realiza utilizando un módulo llamado \textit{global\_planner}, el cúal utiliza un mapa actual, y el radio del robot para planear una ruta del punto A al punto B.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.5]{imagenes/globalplanner.png}
+\caption{Ejemplo de un uso del global planner en ROS, para obtener una posible ruta. Tomado de \cite{ROSPLANNER}.}
+\end{figure}
+
+Este módulo utiliza diferentes algoritmos, que pueden ser activados o desactivados para realizar la planeación de las rutas, como el algoritmo Dijkstra's.

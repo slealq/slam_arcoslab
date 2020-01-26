@@ -1,0 +1,7 @@
+# Fdb version 3
+["pdflatex"] 0 "../proyecto.tex" "proyecto.pdf" "proyecto" 0
+  "../proyecto.tex" 0 -1 0 ""
+  "proyecto.aux" 1532970754 8 a94a2480d3289e625eea47cd1b285758 ""
+  (generated)
+  "proyecto.pdf"
+  "proyecto.log"

@@ -1,0 +1,33 @@
+(TeX-add-style-hook
+ "5_implementacion"
+ (lambda ()
+   (LaTeX-add-labels
+    "F:kinect"
+    "F:cuadricula"
+    "F:kinectsalida"
+    "F:kinect1"
+    "F:diagramakinect"
+    "F:hokuyonode"
+    "F:hokuyorqtgraph"
+    "F:hokuyorviz"
+    "F:roboclaw-stm"
+    "F:bateria"
+    "F:encoderfisico"
+    "F:cablesmotor"
+    "F:actoboticscables"
+    "F:cables"
+    "F:pidposicion"
+    "F:pidvelocidad"
+    "F:ruedas"
+    "F:ensamble1"
+    "F:ensamble2"
+    "F:ensamble3"
+    "F:ensamble4"
+    "F:repositorio_installacion"
+    "F:rqtgraphomni"
+    "T:odometria"
+    "F:joy"
+    "F:omnips4"
+    "F:tablanavegacion"))
+ :latex)
+

@@ -1,0 +1,5 @@
+PWD /home/sleal/UCR/proyecto_electrico/slam_arcoslab/contenido
+INPUT /usr/share/texmf-dist/web2c/texmf.cnf
+INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
+INPUT /home/sleal/UCR/proyecto_electrico/slam_arcoslab/proyecto.tex
+OUTPUT proyecto.log

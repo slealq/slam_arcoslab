@@ -6,9 +6,6 @@
 
 
 %--------------------------------------------------------------------
-Desde los años sesenta, con la revolución industrial, los humanos han sido relevados de operar tareas riesgosas. La tecnología ha evolucionado, siendo utilizada para realizar tareas más complejas, o de mucha precisión \cite{Garcia2007}. La fabricación de micro procesadores, o autos en masa son algunos ejemplos de productos que han florecido gracias a esta evolución.
-
-Sin embargo, actualmente existen nuevas necesidades y mercados fuera de la tradicional manufactura. Por ejemplo, limpieza, cocina, construcción, agricultura, entre otras. Esto demanda una nueva generación de invenciones que puedan satisfacer estas necesidades \cite{Garcia2007}.
 
 La robótica es la ciencia de percibir y manipular el mundo físico através de dispositivos mecánicos controlados por computadoras \cite{Thrun2005}. Hasta el día de hoy la robótica ha logrado perfeccionar los movimientos precisos milimétricamente, y las tareas repetitivas. Sin embargo, fuera de una línea de producción, estas ventajas no son útiles, pues por ejemplo en un hogar los ambientes son dinámicos y el robot por lo tanto debe poseer características cognitivas \cite{HelioAzevedoRenatoArcherITCenterandICM/USPJosePedroR.InstituteofMathematicalandComputerSciences2017}.
 
@@ -16,13 +13,19 @@ El laboratorio de investigación ARCOS-Lab (Autonomous Robots and Cognitive Syst
 
 Actualmente (2018) el ARCOS-Lab está trabajando en la construcción de un robot humanoide, el cuál se desea que pueda reconocer su ambiente, y realizar tareas dinámicas como cocinar. La navegación es uno de los aspectos más importantes que se debe desarrollar para cumplir el fin propuesto. Por lo tanto, el presente proyecto plantea implementar un algoritmo llamado SLAM (Simultaneous localization and mapping) en la navegación dos-dimensional de un robot omnidireccional con ruedas mecanum.
 
-Una de las herramientas más potentes de hoy en día en el tema de la robótica es un sistema llamda ROS (Robot Operating System). El mismo se desarrolla primariamente en Linux, y posee muchas herramientas necesarias para realizar una tarea como la propuesta. El software ayuda a incorporar modularmente sensores y algoritmos de software desarrollados por científicos que trabajan en el área.
+Actualmente, el ARCOS-Lab ha desarrollado varios prototipos de robots omnidireccionales. Sin embargo, a través de las iteraciones se han ido perfeccionando aspectos, cómo el diseño de la base, y las piezas necesarias para crear una base omnidireccional estable, robusta y diseñada con precisión.
+
+De los primeros diseños que se realizó, el ensamble de la base se realizó en una base de madera en la cuál los montajes para los motores no se diseñaron con computadora. Esto causa problemas en los movimientos omnidireccionales del robot, por lo que el diseño de la base se debío realizar con una computadora, y cortar con precisión en una cortadora láser.
+
+Este proyecto pretende ensamblar eléctricamente la base del carro omnidireccional, utilizando las piezas ya diseñadas, impresas, y cortadas, y dotarlo de la capacidad de navegación dos dimencional. Por lo tanto, viene a completar la posiblidad de que con este robot se realice navegación autónoma.
 
 \newpage
 \section{Alcance}
 Se pretende implementar SLAM en robots pequeños denomindados ``\textit{mobile robots}'' dentro del contexto del ARCOS-Lab. Los mismos son plataformas de aproximadamente $50cm$ x $20cm$. Fueron contruidos para implementar los algoritmos de navegación, y realizar investigación en esta área, con el fin de perfeccionar el sistema que se utilizará para el robot humanoide. Las plataformas poseen en esencia el mismo sistema de ruedas omnidireccionales mecanum del robot humanoide.
 
 En principio, es difícil experimentar con la base del robot humanoide desde un inicio. Primero está la limitación de que la misma plataforma está en un constante proceso de desarrollo, lo que quiere decir que se le hacen mejoras constantemente. Esto dificulta la disponibilidad de la base. Además, en los casos en que la plataforma se controle incorrectamente, los daños que pueda ocasionar a una persona o los objetos dentro del laboratorio son superiores a los que podrían ocasionar las plataformas más pequeñas.
+
+El producto final de este proyecto eléctrico es proporcionar los diseños de código y ensamble, así como de conexiones eléctricas para los componentes existentes, para ensamblar un robot omnidireccional que listo para realizar navegación autónoma, por medio del sistema ROS (Robot Operating System).
 
 \subsection{Equipo}
 A continuación se hace una breve descripción del equipo principal utilizado para la construcción de las plataformas omnidireccionales utilizadas.
@@ -40,11 +43,10 @@ Se describen las herramientas que se utilizarán en el desarrollo del proyecto.
 
 \begin{itemize}
 \item \textit{ROS}: El desarollo e implentación de SLAM se realizará en ROS, puesto que es un sistema que permite la modularización de los diferentes componentes del robot. Facilita la conexión entre los diferentes perifericos. Posee librerías que contienen el código necesario para implementar SLAM.
-\item \textit{Gazebo}: Un simulador de interacciones físicas para ROS, en donde se puede realizar la implementación completa del agoritmo de control para las plataformas móviles.
 \end{itemize}
 
 \subsection{Resultados}
-El resultado final esperado es la implementación física del algoritmo a las plataformas ya existentes del laboratorio. Además, se realizarán simulaciones que muestren los resultados esperados en la realidad, esto con el fin de dividr en etapas la implementación, para facilitar la detección de errores. En otras palabras, se tendrá tanto la simulación como la implementación física del algoritmo de navegación autónoma.
+El resultado final esperado es la implementación física del algoritmo a las plataformas ya existentes del laboratorio.
 
 \section{Justificación}
 Este proyecto pretende brindar la base sobre la cuál nuevos proyectos pueden trabajar en nuevos algoritmos de navegación. Además, pretende fijar un primer paso para la implementación de navegación en el robot humanoide.
@@ -66,23 +68,21 @@ Para el desarrollo de este proyecto se establecieron los siguientes objetivos:
 \end{itemize}
 
 \section{Metodología}
+\label{metodología}
 
 \begin{enumerate}  %lista numerada
     \item Conectar el Kinect con una computadora corriendo Linux e utilizar ROS (Robot Operating System) para ver la imagen producida por la cámara.
-    \item Convertir la imagen en formato PointCloud2 (3d) a un formato LaserScan (2d).
     \item Conectar el sensor láser Hokuyo a una computadora corriendo Linux e utilizar ROS para interpretar la imagen en formato LaserScan.
-    \item Utilizar el simulador Gazebo en ROS con un modelo básico de un robot, e probar el uso de sensores y movimiento del mismo.
     \item Conectar el controlador de motores RoboClaw con un STM32F4 y hacer pruebas de comunicación.
     \item Diseñar el código necesario para leer el codificador de cuadratura que poseen los motores.
-    \item Implementar el código necesario para la odometría de los motores.
     \item Diseñar un controlador PID para la velocidad del motor.
+    \item Realizar el ensamblaje de la base.
     \item Realizar pruebas de movimiento, e implemetar el protocolo de comunicación en el STM32f4.
-    \item Utilizar un Joystick DualShock 4 en ROS y utilizarlo para mover el robot.
-    \item Implementar el algoritmo de gmapping a el robot de la simulación en gazebo.
-    \item Implementar el algoritmo de localización y navegación amcl en el simulador gazebo.
-    \item Utilizar una Raspberry Pi para mandarle información de movimiento al STM32F4-Roboclaw. Mover los motores y hacer pruebas.
-    \item Realizar el cálculo de odometría con el Raspberry Pi con la información dada por el RoboClaw.
     \item Confeccionar el módulo que conecta el STM32F4 con ROS.
-    \item Trasladar lo implementado en Gazebo hacia el robot real.
+    \item Implementar el código necesario para la odometría de los motores.
     \item Realizar pruebas de funcionamiento, y corregir problemas.
+    \item Utilizar un Joystick DualShock 4 en ROS y utilizarlo para mover el robot.
+    \item Implementar el algoritmo de gmapping.
+    \item Implementar el algoritmo de localización y navegación amcl.
+
 \end{enumerate}

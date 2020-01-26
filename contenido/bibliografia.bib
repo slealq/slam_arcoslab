@@ -1,8 +1,53 @@
+@article{Abbeel2006,
+abstract = {n gMapping is probably most used SLAM algorithm n Implementation available on openslam.org (which has many more resources) n Currently the standard algorithm on the PR2 gMapping Overview Page 2! n Given n observations z 1:t = z 1 , {\ldots}, z t n odometry measurements u 2:t = u 1 , {\ldots}, u t n Find n Posterior p(x 1:t , m | z 1:t , u 2:t) n With m a grid map Problem Formulation n Rao-Blackwellized Particle Filter n Each particle = sample of history of robot poses + posterior over maps given the sample pose history; approximate posterior over maps by distribution with all probability mass on the most likely map whenever posterior is needed n Proposal distribution ¼ n Approximate the optimal sequential proposal distribution p*(x t) = p(x t | x i 1:t-1 , z 1:t , u 1:t) / p(z t | m i t-1 , x t) p(x t | x i t-1 , u t) [note integral over all maps {\`{a}} most likely map only] n 1. find the local optimum argmax x p*(x) n 2. sample x k around the local optimum, with weights w k = p*(x k) n 3. fit a Gaussian over the weighted samples n 4. this Gaussian is an approximation of the optimal sequential proposal p* n Sample from (approximately) optimal sequential proposal},
+author = {Abbeel, Pieter},
+journal = {Transactions in Robotics},
+title = {{gMapping}},
+year = {2006}
+}
+@article{Grisetti2007,
+abstract = {Recently, Rao-Blackwellized particle filters (RBPF) have been introduced as an effective means to solve the simultaneous localization and mapping problem. This approach uses a particle filter in which each particle carries an individual map of the environment. Accordingly, a key question is how to reduce the number of particles. In this paper, we present adaptive techniques for reducing this number in a RBPF for learning grid maps. We propose an approach to compute an accurate proposal distribution, taking into account not only the movement of the robot, but also the most recent observation. This drastically decreases the uncertainty about the robot's pose in the prediction step of the filter. Furthermore, we present an approach to selectively carry out resampling operations, which seriously reduces the problem of particle depletion. Experimental results carried out with real mobile robots in large-scale indoor, as well as outdoor, environments illustrate the advantages of our methods over previous approaches},
+author = {Grisetti, Giorgio and Stachniss, Cyrill and Burgard, Wolfram},
+doi = {10.1109/TRO.2006.889486},
+isbn = {1552-3098 VO - 23},
+issn = {15523098},
+journal = {IEEE Transactions on Robotics},
+keywords = {Adaptive resampling,Improved proposal,Motion model,Rao-Blackwellized particle filter (RBPF),Simultaneous localization and mapping (SLAM)},
+title = {{Improved techniques for grid mapping with Rao-Blackwellized particle filters}},
+year = {2007}
+}
+
+@misc{ROSAMCL,
+abstract = {{amcl is a probabilistic localization system for a robot moving in 2D. It implements the adaptive (or KLD-sampling) Monte Carlo localization approach (as described by Dieter Fox), which uses a particle filter to track the pose of a robot against a known map. }},
+author = {{Gerkey, Brian}},
+title = {{Amcl localization system}},
+howpublished = {\url{http://wiki.ros.org/amcl}},
+year = {2009}
+}
+
+@misc{ROSPLANNER,
+abstract = {{ A path planner library and node.}},
+author = {{David Lu}},
+title = {{global\_planer a path library and node}},
+howpublished = {\url{http://wiki.ros.org/global_planner}},
+year = {2012}
+}
+
 @misc{ROSTF,
 abstract = {This tutorial provides a guide to set up your robot to start using tf.},
-author = {{ROS TF}},
-title = {{TF}},
-url = {http://wiki.ros.org/navigation/Tutorials/RobotSetup/TF}
+author = {{Foote, Tully}},
+title = {{TF transform tree}},
+year = {2009},
+howpublished = {\url{http://wiki.ros.org/navigation/Tutorials/RobotSetup/TF}}
+}
+@misc{iai_kinect2,
+  author = {Wiedemeyer, Thiemo},
+  title = {{IAI Kinect2}},
+  organization = {Institute for Artificial Intelligence},
+  address = {University Bremen},
+  year = {2014 -- 2015},
+  howpublished = {\url{https://github.com/code-iai/iai\_kinect2}},
+  note = {Accessed June 12, 2015}
 }
 @article{DanielMaierArminHornung2012,
 abstract = {In this paper, we present an integrated approach for robot localization, obstacle mapping, and path planning in 3D environments based on data of an onboard consumer-level depth camera. We rely on state-of-the-art techniques for environment modeling and localization, which we extend for depth camera data. We thoroughly evaluated our system with a Nao humanoid equipped with an Asus Xtion Pro Live depth camera on top of the humanoid's head and present navigation experiments in a multi-level environment containing static and non-static obstacles. Our approach performs in real-time, maintains a 3D environment representation, and estimates the robot's pose in 6D. As our results demonstrate, the depth camera is well-suited for robust localization and reliable obstacle avoidance in complex indoor environments.},
@@ -82,16 +127,6 @@ title = {{Probabilistic robotics (intelligent robotics and autonomous agents ser
 volume = {45},
 year = {2005}
 }
-@article{Taheri2015,
-abstract = {This paper introduces omnidirectional Mecanum wheels and discusses the kinematic relations of a platform used four Mecanum wheels. Forward and Inverse kinematic is been derived in this paper. Experimental and analytically results are obtained and 8 different motions without changing the robot's orientation is achieved.},
-author = {Taheri, Hamid and Qiao, Bing and Ghaeminezhad, Nurallah},
-doi = {10.5120/19804-1586},
-issn = {09758887},
-journal = {International Journal of Computer Applications},
-keywords = {Omnidirectional,four Mecanum wheeled robot,kinematic,mobile robot},
-title = {{Kinematic Model of a Four Mecanum Wheeled Mobile Robot}},
-year = {2015}
-}
 @article{Manduchi2005,
 abstract = {Autonomous navigation in cross-country environments presents many new challenges with respect to more traditional, urban environments. The lack of highly structured components in the scene complicates the design of even basic functionalities such as obstacle detection. In addition to the geometric description of the scene, terrain typing is also an important component of the perceptual system. Recognizing the different classes of terrain and obstacles enables the path planner to choose the most efficient route toward the desired goal. This paper presents new sensor processing algorithms that are suitable for cross-country autonomous navigation. We consider two sensor systems that complement each other in an ideal sensor suite: a color stereo camera, and a single axis ladar. We propose an obstacle detection technique, based on stereo range measurements, that does not rely on typical structural assumption on the scene (such as the presence of a visible ground plane); a color-based classification system to label the detected obstacles according to a set of terrain classes; and an algorithm for the analysis of ladar data that allows one to discriminate between grass and obstacles (such as tree trunks or rocks), even when such obstacles are partially hidden in the grass. These algorithms have been developed and implemented by the Jet Propulsion Laboratory (JPL) as part of its involvement in a number of projects sponsored by the US Department of Defense, and have enabled safe autonomous navigation in high-vegetated, off-road terrain.},
 author = {Manduchi, Roberto and Castano, Andres and Talukder, Ashit and Matthies, Larry},
@@ -102,6 +137,26 @@ journal = {Autonomous Robots},
 keywords = {Autonomous navigation,Color classification,Ladar classification,Obstacle detection,Terrain classification},
 title = {{Obstacle detection and terrain classification for autonomous off-road navigation}},
 year = {2005}
+}
+@article{Taheri2015,
+abstract = {This paper introduces omnidirectional Mecanum wheels and discusses the kinematic relations of a platform used four Mecanum wheels. Forward and Inverse kinematic is been derived in this paper. Experimental and analytically results are obtained and 8 different motions without changing the robot's orientation is achieved.},
+author = {Taheri, Hamid and Qiao, Bing and Ghaeminezhad, Nurallah},
+doi = {10.5120/19804-1586},
+issn = {09758887},
+journal = {International Journal of Computer Applications},
+keywords = {Omnidirectional,four Mecanum wheeled robot,kinematic,mobile robot},
+title = {{Kinematic Model of a Four Mecanum Wheeled Mobile Robot}},
+year = {2015}
+}
+@inproceedings{Lai2011,
+abstract = {Over the last decade, the availability of public image repositories and recognition benchmarks has enabled rapid progress in visual object category and instance detection. Today we are witnessing the birth of a new generation of sensing technologies capable of providing high quality synchronized videos of both color and depth, the RGB-D (Kinect-style) camera. With its advanced sensing capabilities and the potential for mass adoption, this technology represents an opportunity to dramatically increase robotic object recognition, manipulation, navigation, and interaction capabilities. In this paper, we introduce a large-scale, hierarchical multi-view object dataset collected using an RGB-D camera. The dataset contains 300 objects organized into 51 categories and has been made publicly available to the research community so as to enable rapid progress based on this promising technology. This paper describes the dataset collection procedure and introduces techniques for RGB-D based object recognition and detection, demonstrating that combining color and depth information substantially improves quality of results.},
+author = {Lai, Kevin and Bo, Liefeng and Ren, Xiaofeng and Fox, Dieter},
+booktitle = {Proceedings - IEEE International Conference on Robotics and Automation},
+doi = {10.1109/ICRA.2011.5980382},
+isbn = {9781612843865},
+issn = {10504729},
+title = {{A large-scale hierarchical multi-view RGB-D object dataset}},
+year = {2011}
 }
 @article{Rusu2011,
 abstract = {With the advent of new, low-cost 3D sensing hardware such as the Kinect, and continued efforts in advanced point cloud processing, 3D perception gains more and more importance in robotics, as well as other fields. In this paper we present one of our most recent initiatives in the areas of point cloud perception: PCL (Point Cloud Library - http://pointclouds.org). PCL presents an advanced and extensive approach to the subject of 3D perception, and it's meant to provide support for all the common 3D building blocks that applications need. The library contains state-of-the art algorithms for: filtering, feature estimation, surface reconstruction, registration, model fitting and segmentation. PCL is supported by an international community of robotics and perception researchers. We provide a brief walkthrough of PCL including its algorithmic capabilities and implementation strategies.},
@@ -117,16 +172,6 @@ pmid = {6162880},
 title = {{3D is here: point cloud library}},
 year = {2011}
 }
-@inproceedings{Lai2011,
-abstract = {Over the last decade, the availability of public image repositories and recognition benchmarks has enabled rapid progress in visual object category and instance detection. Today we are witnessing the birth of a new generation of sensing technologies capable of providing high quality synchronized videos of both color and depth, the RGB-D (Kinect-style) camera. With its advanced sensing capabilities and the potential for mass adoption, this technology represents an opportunity to dramatically increase robotic object recognition, manipulation, navigation, and interaction capabilities. In this paper, we introduce a large-scale, hierarchical multi-view object dataset collected using an RGB-D camera. The dataset contains 300 objects organized into 51 categories and has been made publicly available to the research community so as to enable rapid progress based on this promising technology. This paper describes the dataset collection procedure and introduces techniques for RGB-D based object recognition and detection, demonstrating that combining color and depth information substantially improves quality of results.},
-author = {Lai, Kevin and Bo, Liefeng and Ren, Xiaofeng and Fox, Dieter},
-booktitle = {Proceedings - IEEE International Conference on Robotics and Automation},
-doi = {10.1109/ICRA.2011.5980382},
-isbn = {9781612843865},
-issn = {10504729},
-title = {{A large-scale hierarchical multi-view RGB-D object dataset}},
-year = {2011}
-}
 @article{Quigley2009,
 abstract = {This paper gives an overview of ROS, an open- source robot operating system. ROS is not an operating system in the traditional sense of process management and scheduling; rather, it provides a structured communications layer above the host operating systems of a heterogenous compute cluster. In this paper, we discuss how ROS relates to existing robot software frameworks, and briefly overview some of the available application software which uses ROS},
 archivePrefix = {arXiv},
@@ -140,4 +185,14 @@ journal = {Icra},
 pmid = {8844323},
 title = {{ROS: an open-source Robot Operating System}},
 year = {2009}
+}
+
+@article{Longhi,
+abstract = {This tutorial chapter aims to teach the main theoretical con- cepts and explain the use of ROS Navigation Stack. This is a powerful toolbox to path planning and Simultaneous localization and mapping (SLAM) but its application is not trivial due to lack of comprehension of the related concepts. This chapter will present the theory inside this stack and explain in an easy way how to perform SLAM in any robot. Step by step guides, example codes explained (line by line) and also both simulated and real robot testing will be available. We will present the requisites and the how-to's that will make the readers able to set the odometry, stablish reference frames and its transformations, configure perception sensors, tune the navigation controllers and plan the path on their own virtual or real robots},
+author = {{Rodrigo Longhi Guimaraes, Andre Schneider de Oliveira, Joao Fabro}},
+journal = {Federal University of Technology},
+year = {2016},
+keywords = {ROS,navigation,real robots,tutorial,virtual robots},
+title = {{ROS Navigation: concepts and tutorial}},
+url = {https://www.researchgate.net/profile/Joao{\_}Fabro/publication/302986850{\_}ROS{\_}Navigation{\_}Concepts{\_}and{\_}Tutorial/links/5b0c2f51aca2725783ec37c4/ROS-Navigation-Concepts-and-Tutorial.pdf?origin=publication{\_}list}
 }

@@ -1,0 +1,67 @@
+\babel@toc {spanish}{}
+\addvspace {10pt}
+\addvspace {10pt}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Diagrama de componentes de un robot omnidireccional. Autor\IeC {\'\i }a propia.\relax }}{5}{figure.caption.4}% 
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Ruedas omnidireccionales Mecanum, con $\alpha = 45^\circ $. Tomado de \cite {Batlle2009}.\relax }}{6}{figure.caption.5}% 
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Diagram simplificado de un motor DC. Tomado de \cite {Giblisco2016}\relax }}{7}{figure.caption.6}% 
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Ejemplo de un encoder utilizando un Hall Sensor, y la se\IeC {\~n}al producida por un encoder de cuadratura. Tomado de \cite {Golnaraghi2017}.\relax }}{8}{figure.caption.7}% 
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Imagen de una captura de un sensor de profundidad. Tomado de \cite {Rusu2011}.\relax }}{9}{figure.caption.8}% 
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Mapa del edificio ACES en la universidad de Texas, cuarto piso. Tomado de \cite {Grisetti2007}.\relax }}{11}{figure.caption.9}% 
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Proceso de mapeo en tiempo real. Tomado de \cite {Grisetti2007}.\relax }}{11}{figure.caption.10}% 
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Diagrama del proceso de localizaci\IeC {\'o}n utilizando \IeC {\'u}nicamente la odometr\IeC {\'\i }a de las ruedas. Tomado de \cite {ROSAMCL}.\relax }}{12}{figure.caption.11}% 
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Diagrama del proceso de estimaci\IeC {\'o}n de la posici\IeC {\'o}n realizado por ACML. Tomade de \cite {ROSAMCL}.\relax }}{13}{figure.caption.12}% 
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Ejemplo de un uso del global planner en ROS, para obtener una posible ruta. Tomado de \cite {ROSPLANNER}.\relax }}{14}{figure.caption.13}% 
+\addvspace {10pt}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Diagrama b\IeC {\'a}sico de la implementaci\IeC {\'o}n de la parte el\IeC {\'e}trica del carrito omnidireccional. Autor\IeC {\'\i }a propia.\relax }}{16}{figure.caption.14}% 
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Muestra de los pines de un Roboclaw 2x15A fabricado por IonMotion. Tomado del manual del fabricante.\relax }}{18}{figure.caption.17}% 
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Diagrama de las funciones que debe realizar el microcontrolado STM32F411. Autor\IeC {\'\i }a propia.\relax }}{19}{figure.caption.19}% 
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Imagen de un ejemplo del sensor Hokuyo, tomado de la p\IeC {\'a}gina de ventas robotshop.com.\relax }}{20}{figure.caption.21}% 
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Imagen de un control de PS4 dualshock. Tomado de la p\IeC {\'a}gina de ventas BestBuy.com\relax }}{21}{figure.caption.22}% 
+\addvspace {10pt}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Revisi\IeC {\'o}n de configuraci\IeC {\'o}n para el stack de navegaci\IeC {\'o}n. Tomado de ROS.\relax }}{25}{figure.caption.23}% 
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Diagrama de las conexiones el\IeC {\'e}ctricas entre los dispositivos. Autor\IeC {\'\i }a propia.\relax }}{27}{figure.caption.24}% 
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Ejemplo de configuraci\IeC {\'o}n de un puerto USART utilizando la librer\IeC {\'\i }a libopencm3. Autor\IeC {\'\i }a propia.\relax }}{29}{figure.caption.25}% 
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Ejemplo de inicializaci\IeC {\'o}n del systick utilizando la librer\IeC {\'\i }a libopencm3. Autor\IeC {\'\i }a propia.\relax }}{29}{figure.caption.26}% 
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Diagrama del PID a programar utilizado para controlar la velocidad de cada motor. Autor\IeC {\'\i }a propia.\relax }}{30}{figure.caption.27}% 
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Diagrama de la actualizaci\IeC {\'o}n de la posici\IeC {\'o}n global. Autor\IeC {\'\i }a propia.\relax }}{33}{figure.caption.28}% 
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Esquema de lo que contiene el archivo principal del programa a correr en el microcontrolador. Autor\IeC {\'\i }a propia.\relax }}{34}{figure.caption.29}% 
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Ejemplo de la utilidad de Tf. Tomado de \cite {ROSTF}.\relax }}{36}{figure.caption.31}% 
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Ejemplo de un launch file en ROS que habilita un \IeC {\'a}rbol tf. Autor\IeC {\'\i }a propia.\relax }}{36}{figure.caption.32}% 
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Diagrama de las interacciones entre el nodo de ROS y el driver de la conexi\IeC {\'o}n USB. Autor\IeC {\'\i }a propia.\relax }}{37}{figure.caption.33}% 
+\addvspace {10pt}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Kinect One (V2) utilizado para realizar pruebas. Autor\IeC {\'\i }a propia.\relax }}{40}{figure.caption.34}% 
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Imagen de calibraci\IeC {\'o}n de prueba. Tomado de \cite {iai_kinect2}.\relax }}{41}{figure.caption.35}% 
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Resultado del comando kinect2\_bridge. Autor\IeC {\'\i }a propia.\relax }}{42}{figure.caption.36}% 
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Prueba de la salida del kinect, utilizando el visor por defecto. Autor\IeC {\'\i }a propia.\relax }}{43}{figure.caption.37}% 
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Esquema generado por RQT\_GRAPH que muestra las topicos disponibles por Iai Kinect. Autor\IeC {\'\i }a propia.\relax }}{44}{figure.caption.38}% 
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Inicializaci\IeC {\'o}n correcta del m\IeC {\'o}dulo hokuyo\_node en ROS. Autoria propia.\relax }}{45}{figure.caption.39}% 
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Diagrama generado por \textit {RQT\_GRAPH}, demostrando la salida de hokuyo\_node. Autor\IeC {\'\i }a propia.\relax }}{46}{figure.caption.40}% 
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Visualizaci\IeC {\'o}n de la salida del sensor l\IeC {\'a}ser Hokuyo utilizando Rviz. Autor\IeC {\'\i }a propia. \relax }}{46}{figure.caption.41}% 
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Conexi\IeC {\'o}n serial en los puertos USART de ambos dispositivos. Autor\IeC {\'\i }a propia.\relax }}{47}{figure.caption.42}% 
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Bater\IeC {\'\i }a de 12V utilizada para alimentar a los controladores Roboclaw. Autor\IeC {\'\i }a propia.\relax }}{48}{figure.caption.43}% 
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Encodificador de cuadratura. Autor\IeC {\'\i }a propia.\relax }}{49}{figure.caption.44}% 
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Cables del motor DC Actobotics. Autor\IeC {\'\i }a propia.\relax }}{50}{figure.caption.45}% 
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Cables de motor Actobotics. Tomado del manual de usuario.\relax }}{51}{figure.caption.46}% 
+\contentsline {figure}{\numberline {5.14}{\ignorespaces Reparaci\IeC {\'o}n de cableado en un motor, debido a da\IeC {\~n}os en las conexiones. Autor\IeC {\'\i }a propia. \relax }}{52}{figure.caption.47}% 
+\contentsline {figure}{\numberline {5.15}{\ignorespaces Tiempo versus la posici\IeC {\'o}n del motor en ticks del encoder, ante un cambio en la referencia en 0.5s. Autor\IeC {\'\i }a propia.\relax }}{54}{figure.caption.48}% 
+\contentsline {figure}{\numberline {5.16}{\ignorespaces Tiempo versus la velocidad del motor en rev/s, ante un cambio en la referencia en 0.5s. Autor\IeC {\'\i }a propia.\relax }}{55}{figure.caption.49}% 
+\contentsline {figure}{\numberline {5.17}{\ignorespaces Acople y rueda a utilizar durante el ensamble. Autor\IeC {\'\i }a propia.\relax }}{56}{figure.caption.50}% 
+\contentsline {figure}{\numberline {5.18}{\ignorespaces Proceso incial del ensamble. Autor\IeC {\'\i }a propia.\relax }}{56}{figure.caption.51}% 
+\contentsline {figure}{\numberline {5.19}{\ignorespaces Soporte de las ruedas. Autor\IeC {\'\i }a propia.\relax }}{57}{figure.caption.52}% 
+\contentsline {figure}{\numberline {5.20}{\ignorespaces Etiquetado de las conexiones. Autor\IeC {\'\i }a propia.\relax }}{57}{figure.caption.53}% 
+\contentsline {figure}{\numberline {5.21}{\ignorespaces Plataforma ensamblada totalmente. Autor\IeC {\'\i }a propia.\relax }}{58}{figure.caption.54}% 
+\contentsline {figure}{\numberline {5.22}{\ignorespaces Instrucciones de instalaci\IeC {\'o}n e instalaci\IeC {\'o}n de dependencias. Autor\IeC {\'\i }a propia.\relax }}{60}{figure.caption.55}% 
+\contentsline {figure}{\numberline {5.23}{\ignorespaces Visualizaci\IeC {\'o}n de las relaciones entre t\IeC {\'o}picos y nodos levantas en ROS. Autor\IeC {\'\i }a propia.\relax }}{61}{figure.caption.56}% 
+\contentsline {figure}{\numberline {5.24}{\ignorespaces Muestra de la salida del nodo \textit {ps4-ros}. Autor\IeC {\'\i }a propia. \relax }}{63}{figure.caption.58}% 
+\contentsline {figure}{\numberline {5.25}{\ignorespaces Uso del control de PS4 para enviar comandos hacia el robot de velocidad. Autor\IeC {\'\i }a propia. \relax }}{64}{figure.caption.59}% 
+\contentsline {figure}{\numberline {5.26}{\ignorespaces Algunos de los requisitos necesarios para la navegaci\IeC {\'o}n con ROS. Tomado de \cite {Longhi}.\relax }}{66}{figure.caption.60}% 
+\contentsline {figure}{\numberline {5.27}{\ignorespaces Mapeo realizado en el cuarto de la cocina del INII. Autor\IeC {\'\i }a propia.\relax }}{67}{figure.caption.61}% 
+\contentsline {figure}{\numberline {5.28}{\ignorespaces Fotograf\IeC {\'\i }a real de la cocineta en la que realiz\IeC {\'o} el mapeo anterior.\relax }}{68}{figure.caption.62}% 
+\contentsline {figure}{\numberline {5.29}{\ignorespaces Mapeo realizado en el ala Sur del INII. Autor\IeC {\'\i }a propia.\relax }}{69}{figure.caption.63}% 
+\contentsline {figure}{\numberline {5.30}{\ignorespaces Fotograf\IeC {\'\i }a real del pasillo en el que se realiz\IeC {\'o} el mapeo anterior.\relax }}{70}{figure.caption.64}% 
+\contentsline {figure}{\numberline {5.31}{\ignorespaces Mapeo realizado en la esquina a las afueras del ARCOS-LAB. Autor\IeC {\'\i }a propia.\relax }}{71}{figure.caption.65}% 
+\contentsline {figure}{\numberline {5.32}{\ignorespaces Fotograf\IeC {\'\i }a real del pasillo en el que se realiz\IeC {\'o} el mapeo anterior.\relax }}{72}{figure.caption.66}% 
+\addvspace {10pt}
+\addvspace {10pt}
+\addvspace {10pt}
+\addvspace {10pt}

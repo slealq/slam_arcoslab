@@ -1,0 +1,29 @@
+% ----------------------------------------
+  \chapter{Conclusiones y recomendaciones}
+% ----------------------------------------
+\label{C:conclusiones}
+
+A modo de cierre, el correspondiente capítlo viene a culminar el proceso de implementación, enumerando las conclusiones principales de este proyecto. Es importante mencionar que
+
+\section{Conclusiones}
+
+El laboratorio de investigación ARCOS-Lab ha llevado a cabo varios procesos de diseño en robot omnidireccionales. A través de las iteracciones se han encontrado una serie de errores que impiden a las bases realizar navegación autónoma, lo cuál era uno de los objetivos princiaples de dichas bases.
+
+El presente proyecto viene a completar la posibilidad de que con este robot omnidireccional se realice navegación autónoma. Por lo tanto, se presentan los diseños adecuados eléctricamente, y en cuestiones de software para proporcionar la infraestructura básica que permita realizar navegación.
+
+A continuación, se enumeran las principales conclusiones expuestas en este proyecto:
+
+\begin{itemize}
+\item Se desarrolló el software de control para las ruedas y los sensores de odometría. El software de control para las ruedas, se diseño utiliando un PID en lazo cerrado con la información de la odometría.
+\item Se desarrolló una infraestructura de comunicación en Python, que conecta la computadora principal y el cuerpo del robot.
+\item Se logró implementar correctamente el software de comunicación dentre dos sensores de profundidad y la computadora principal, los cuáles son un Kinect, y un Hokuyo.
+\item Se realizó la integración de todos los módulos, tanto de software como de hardware y se realizaron pruebas de funcionamiento para cada módulo del sistema, donde se detectaron ciertos errores en el cálculo de la odometría de las ruedas, los cuáles fueron corregidos.
+\item Se realizó la implementación del sistema de SLAM en la computadora principal.
+\item Se realizaron experimentos de funcionamiento para validar el sistema de mapeo y localización simultánea.
+\end{itemize}
+
+\section{Recomendaciones}
+
+A modo de recomendaciones, se propone diseñar además de la infraestructura en Hardware y Software, los métodos mediante los cuáles se realizará la depuración de las implementaciones. En particular, la depuración de errores en las conexiones eléctricas, y protocoles de comunicación serial no son triviales, puesto que son tareas con las que generalmente no se tiene mucho contacto.
+
+Establecer la técnica que se utilzará para la depuración resulta entonces crucial en estos aspectos, para la eficiencia del proceso. La lectura de otros proyectos similares puede brindar una idea de cómo realizar la depuración correctamente.
