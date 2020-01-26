@@ -7,7 +7,7 @@
 
 %--------------------------------------------------------------------
 
-La robótica es la ciencia de percibir y manipular el mundo físico através de dispositivos mecánicos controlados por computadoras \cite{Thrun2005}. Hasta el día de hoy la robótica ha logrado perfeccionar los movimientos precisos milimétricamente, y las tareas repetitivas. Sin embargo, fuera de una línea de producción, estas ventajas no son útiles, pues por ejemplo en un hogar los ambientes son dinámicos y el robot por lo tanto debe poseer características cognitivas \cite{HelioAzevedoRenatoArcherITCenterandICM/USPJosePedroR.InstituteofMathematicalandComputerSciences2017}.
+La robótica es la ciencia de percibir y manipular el mundo físico através de dispositivos mecánicos controlados por computadoras \cite{Thrun2005}. Hasta hoy la robótica ha logrado perfeccionar los movimientos precisos milimétricamente, y las tareas repetitivas. Sin embargo, fuera de una línea de producción, estas ventajas no son útiles, por ejemplo en un hogar los ambientes son dinámicos y el robot por lo tanto debe poseer características cognitivas \cite{HelioAzevedoRenatoArcherITCenterandICM/USPJosePedroR.InstituteofMathematicalandComputerSciences2017}.
 
 El laboratorio de investigación ARCOS-Lab (Autonomous Robots and Cognitive Systems) se enfoca primariamente en desarrollar e implementar nuevas técnicas en dispositivos mecánicos con el fin de satisfacer algunas de las necesidades mencionadas anteriormente.
 
@@ -43,6 +43,9 @@ Se describen las herramientas que se utilizarán en el desarrollo del proyecto.
 
 \begin{itemize}
 \item \textit{ROS}: El desarollo e implentación de SLAM se realizará en ROS, puesto que es un sistema que permite la modularización de los diferentes componentes del robot. Facilita la conexión entre los diferentes perifericos. Posee librerías que contienen el código necesario para implementar SLAM.
+\item \textit{Libopencm3}: Biblioteca para desarrollar el código en C del microcontrolador STM32F411.
+\item \textit{Libopencm3-plus}: Biblioteca desarrollada por el Arcos-LAB que provee funcionalidades extras a \textit{Libopencm3}.
+\item \textit{Roboclaw serial comunication library}: Esta Biblioteca es provista por la empresa Roboclaw y contiene una implementación del protocolo de comunicación de los controladores de los motores. Este código se usó como base para desarrollar la biblioteca utilizada en el microcontrolador.
 \end{itemize}
 
 \subsection{Resultados}

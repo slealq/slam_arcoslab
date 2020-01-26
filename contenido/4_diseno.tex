@@ -3,11 +3,11 @@
 % --------------------
 \label{C:diseño}
 
-El presente capítulo pretende informar al lector de los respectivos diseños tanto en Hardware como en Software necesarios para la implementación de navegación y localización simultánea. Es indispensable tener en cuenta los requerimientos del diseño, lo por que el la primera sección titulada \textbf{Justificación de diseño} se mencionan algunas de las características que debe cumplir cada etapa.
+El presente capítulo pretende informar al lector de los respectivos diseños tanto en Hardware como en Software necesarios para la implementación de navegación y localización simultánea. Es indispensable tener en cuenta los requerimientos del diseño, lo por que en la primera sección titulada \textbf{Justificación de diseño} se mencionan algunas de las características que debe cumplir cada etapa.
 
 A partir de esto, se inicia con el proceso de diseño, donde el la sección \textbf{Diagrama eléctrico} se habla de las conexiones elétricas necesarias entre los diferentes módulos, así como de las características de cada módulo por las cuáles las conexiones se realizan de esa manera. Además se realiza un análisis rápido del grosor de los cables, debido al consumo de corriente máximo de los motores.
 
-Posteriormente se habla del diseño del código necesario en el STM32F411 en la sección \textbf{Código del stm32f411}, el cuál debe cumplir con las características mencionadas en la sección de justificación, como poseer una librería de comunicación, realizar la lectura de los timers relacionados a cada encoder, realizar un controlador PID para la velocidad de los motores, entre otros.
+Posteriormente se habla del diseño del código necesario en el STM32F411 en la sección \textbf{Código del stm32f411}, el cuál debe cumplir con las características mencionadas en la sección de justificación, como poseer una biblioteca de comunicación, realizar la lectura de los timers relacionados a cada encoder, realizar un controlador PID para la velocidad de los motores, entre otros.
 
 Finalmente, la sección \textbf{Código de la computadora principal} menciona el diseño de lo necesario del lado de la computadora principal, de acuerdo con la justificación, para publicar la información de la odometría y sensores del robot en el ambiente de ROS.
 
@@ -25,7 +25,7 @@ Antes de iniciar con el diseño de cada etapa, se procederá a enlistar las nece
 
 \subsection{Hardware}
 
-En lo que respecta a Hardware, en diseño hay muy poco trabajo por hacer. Los diseños de las piezas del carrito omnidireccional, y componentes electrónicos \textbf{no} son necesarios para este proyecto, pues son etapas ya concluídas. Sin embargo, será importante realizar un equema de conexiones eléctricas que permita interconectar los diferentes dispotivos. Por lo tanto se deberá:
+En lo que respecta a Hardware, en diseño hay muy poco trabajo por hacer. Los diseños de las piezas del carrito omnidireccional, y componentes electrónicos \textbf{no} son necesarios para este proyecto, pues son etapas ya concluídas. Sin embargo, será importante realizar un esquema de conexiones eléctricas que permita interconectar los diferentes dispotivos. Por lo tanto se deberá:
 
 \begin{enumerate}
 \item Realizar el análisis de los pines tanto del lado de los controladores Roboclaw, como del lado del STM32F411 para analizar la compatibilidad entre ambos dispositivos.
@@ -40,11 +40,11 @@ En lo que respecta a Hardware, en diseño hay muy poco trabajo por hacer. Los di
 Para el diseño del código, se debe considerar el hardware que se tiene y las funciones que este permite. A continuación se listarán las funciones que debe cumplir el código por escribir:
 
 \begin{enumerate}
-\item Librería de comunicación hacia el Roboclaw. Comandos básicos de prueba, como leer firmware, leer información de la batería, y enviar comandos de velocidad.
+\item Biblioteca de comunicación hacia el Roboclaw. Comandos básicos de prueba, como leer firmware, leer información de la batería, y enviar comandos de velocidad.
 \item Escribir una función que sea llamada por medio de interrupciones de hardware, cada cierto tiempo constante, para llevar control de la velocidad de cada encoder, y la posición del encoder.
 \item Diseñar una función que controle la velocidad de cada rueda, por medio de un control PID discreto.
 \item Diseñar un protocolo de comunicación que permita recibir comandos de velocidad del Raspberry Pi, y enviar información de la odometría del robot al mismo.
-\item Escribir la función que realice el cálculo de la odometría real del robot en cada interrupción por hardware.
+\item Escribir la función que realice el cálculo de la odometría global del robot en cada interrupción por hardware.
 \end{enumerate}
 
 En la computadora principal se correrá el servidor de ROS que interconectará el robot omnidireccional con el stack de navegación. Hay varios requisitos que se deben cumplir para que el stack de navegación funcione correctamente. La figura \ref{F:navigation_stack} muestra un diagrama de la interacción entre Navigation Stack y el robot deseado. Los cuadros que se encuentran de color azulado, son específicas de la plataforma.
@@ -92,8 +92,13 @@ Finalmente, la nomenclatura de cada motores, se encuentra en el mismo diagrama \
 
 \section{Código del stm32f411}
 
-\subsection{Librería de comunicación}
-Para escribir la librería, el manual de usuario del roboclaw menciona la estructura básica de los diferentes comandos que acepta el Roboclaw. Se implementarán un total de 6 instrucciones para proporcionar el funcionamiento básico del robot. En el apéndice se puede encontrar más información acerca de la estructura de las instrucciones. En particular nos interesan las intrucciones 0, 1, 4, 5, 21 y 24. A continuación se muestra la estructura de las instrucciones a implementar:
+\subsection{Biblioteca de comunicación}
+
+La biblioteca de comunicación que comunica al microcontrolador STM32F411 con los controladores de motores Roboclaw se desarollará basandose en la biblioteca ya existente de Roboclaw. La bibilioteca contiene una seria de instrucciones que le indican a los microcontroladores realizar ciertas acciones, como por ejemplo mover los motores en una dirección u otra, y además indicarles la velocidad. La biblioteca se encuentra escrita en Python, y de acá se tomarán los ejemplos necesarios para realizar una biblioteca en C con sólo las instrucciones necesarias. La biblioteca original contiene más de 100 instrucciones, sin embargo no se utilizarán todas las instrucciones de momento.
+
+Es importante destacar que el microcontrolador posee soporte para puertos USART. Inclusive, la biblioteca libopencm3 posee un paquete para transimisión a través de estos puertos. Sólo se utilizan dos comandos importantes, los cuáles son \textit{usart\_send\_blocking} y \textit{usart\_recv\_blocking}.
+
+Se implementarán un total de 6 instrucciones para proporcionar el funcionamiento básico del robot. En el apéndice se puede encontrar más información acerca de la estructura de las instrucciones. En particular nos interesan las intrucciones 0, 1, 4, 5, 21 y 24. A continuación se muestra la estructura de las instrucciones a implementar:
 
 \begin{itemize}
 \item \textbf{Instrucción 0:} Drive Forward M1. Se utiliza para mover el motor 1 hacia adelante. Tiene valores válidos desde el rango de 0 a 127, donde 127 es velocidad máxima, y 0 completamente detenido. Se manda de la siguiente manera:
@@ -142,18 +147,16 @@ Valor (2 bytes), CRC (2 bytes)
 
 \end{itemize}
 
-Esta librería se programará en el microcontrolador STM32, para poder enviar mensajes hacia el controlador de los motores. Es importante destacar que el microcontrolador posee soporte para puertos USART. Inclusive, la librería libopencm3 posee un paquete para transimisión a través de estos puertos. Sencillamente se utilizan dos comandos importantes, los cuáles son \textit{usart\_send\_blocking} y \textit{usart\_recv\_blocking}.
-
-Respectivamente mandan y reciben un byte de información a la vez, y los bits de inicio y fin son configurables, al igual que la velocidad de transferencia, la cuál debe coincidir con la velocidad del controlador Roboclaw. Además de estos, existen otros parámetros que se deben configurar para el funcionamiento correcto del puerto de comunicación. La figura \ref{F:usart} muestra un ejemplo de cómo configurar un puerto usart utilzando la librería libopencm3.
+Adicionalmente, en cada instrucción se manda y recibe un byte de información a la vez, y los bits de inicio y fin son configurables, al igual que la velocidad de transferencia, la cuál debe coincidir con la velocidad del controlador Roboclaw. Además de estos, existen otros parámetros que se deben configurar para el funcionamiento correcto del puerto de comunicación. La figura \ref{F:usart} muestra un ejemplo de cómo configurar un puerto usart utilzando la biblioteca libopencm3.
 
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.5]{imagenes/usart.png}
-\caption{Ejemplo de configuración de un puerto USART utilizando la librería libopencm3. Autoría propia.}
+\caption{Ejemplo de configuración de un puerto USART utilizando la biblioteca libopencm3. Autoría propia.}
 \label{F:usart}
 \end{figure}
 
-\subsection{Encoder}
+\subsection{Código del Encoder}
 
 Para llevar el conteo de la cantidad de ticks que ha ocasionado un encoder en un timer del stm32f411, se debe leer constantemente el estado de cada timer, y transferir la información a una variable donde se lleve la cuenta de los ticks. Esta lectura debe de ser en intervalos de tiempo constante, para a su vez poder calcular la velocidad del motor.
 
@@ -164,13 +167,13 @@ Por lo tanto, se obtienen interrupciones en intervalos contantes, que son produc
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.5]{imagenes/systick.png}
-\caption{Ejemplo de inicialización del systick utilizando la librería libopencm3. Autoría propia.}
+\caption{Ejemplo de inicialización del systick utilizando la biblioteca libopencm3. Autoría propia.}
 \label{F:systick}
 \end{figure}
 
 En la interrupción, se debería de actualizar una variable que lleve control de los ticks que han sucedido desde el inicio del programa. Además, se deberá revisar una bandera que se activa cuando el timer respectivo al encoder llega a 0.
 
-La bandera relacionada a este evento se llama TIM\_SR\_UIF en el contexto de la librería libopencm3. En particular, de la mencionada librería se deberán utilizar tres comandos importantes, los cuáles son:
+La bandera relacionada a este evento se llama TIM\_SR\_UIF en el contexto de la biblioteca libopencm3. En particular, de la mencionada biblioteca se deberán utilizar tres comandos importantes, los cuáles son:
 
 \begin{itemize}
 \item \textbf{timer\_get\_counter(TIMER\_PERIPHERAL):} Esta función retorna el valor del contador, el cuál es un entero sin signo de máximo 32 bits.
@@ -195,11 +198,11 @@ La figura \ref{F:pid_diagrama} muestra el PID en cuestión a programar. La funci
 
 Los valores de Kp, Ki, y Kd deben ser fácilmente ajustables desde el ciclo principal, para su ajuste correspondiente. Algo a notar, diferente de un PID convencional, es que la acción del controlador tiene un límite, puesto que el controlador de los motores no acepta señales análogas. Esto quiere decir que se debe manejar la condición en donde la señal de control sea mayor al número 127 (que es la máxima señal de control que acepta el Roboclaw).
 
-\subsection{Protocolo de comunicación USB}
+\subsection{Protocolo de comunicación entre Discovery y PC}
 
 \label{libreria}
 
-Para esta función, será necesario utilizar la librería llamada libopencm3-plus, la cuál contiene funciones que permiten utilizar comandos básicos como putc y getc en el buffer del puerto USB que trae el microcontrolador stm32f411.
+Para esta función, será necesario utilizar la biblioteca llamada libopencm3-plus, la cuál contiene funciones que permiten utilizar comandos básicos como putc y getc en el buffer del puerto USB que trae el microcontrolador STM32F411. La conexión se realiza entonces entre el puerto de comunicación USB del microcontrolador, y un puerto USB de la PC.
 
 El protocolo de comunicación deberá ser binario, para mayor eficiencia en la transmisión. Al igual que en el caso del protocolo de comunicación hacia el roboclaw, se utilizará una verificación crc16 para todas las instrucciones. Se diseñarán varias instrucciones con el fin de enviar comandos de velocidad desde la pc principal, y además poder recibir información de la odometría actual del robot.
 
@@ -269,9 +272,11 @@ $X_{1A}$ (float 32 bits), $X_{2A}$ (float 32 bits), $X_{1B}$ (float 32 bits), $X
 
 \end{itemize}
 
-\subsection{Odometría Real del robot}
+\subsection{Odometría global del robot}
 
-Para realizar el cálculo de la odometría real del robot, se utilizarán las ecuaciones descritas en la nota teórica. Para esto, se utiliza la velocidad angular de cada una de las ruedas en un instante dado, se calcula el cambio en la posición de cada rueda en un instante dado, y con esto obtenemos el cambio en la posición del robot en ese instante. Finalmente, estos cambios se suman constantemente en variables globales, para mantener la posición global del robot. A continuación, el diagrama mostrado en \ref{F:calculo_odometria} muestra el diagrama de flujo de lo anteriormente mencionado.
+Existen dos tipos de odometría en un robot. La odometría local, la cuál se mide con respecto al marco de referencia del robot (Se mueve el robot hacia la izquierda, el robot rota sobre su propio eje 90 grados, etc.). El segundo tipo es la odometría global, la cuál se mide con respecto al marco de referencia del mundo. Se mueve hacia el este, al oeste, rota, etc, sin importar la orientación del robot dentro de este marco de referencia. Para efectos de navegación, nos interesa el segundo tipo de odometría.
+
+Para realizar el cálculo de la odometría global del robot, se utilizarán las ecuaciones descritas en la nota teórica. Para esto, se utiliza la velocidad angular de cada una de las ruedas en un instante dado, se calcula el cambio en la posición de cada rueda en un instante dado, y con esto obtenemos el cambio en la posición del robot en ese instante. Finalmente, estos cambios se suman constantemente en variables globales, para mantener la posición global del robot. A continuación, el diagrama mostrado en \ref{F:calculo_odometria} muestra el diagrama de flujo de lo anteriormente mencionado.
 
 \begin{figure}[H]
 \centering
@@ -299,14 +304,14 @@ A continuación en la figura \ref{F:main} se muestra un diagrama completo que mu
 
 \section{Código de la computadora principal}
 
-
+Este es el código que debe correr en el Raspberry PI. Para efectos prácticos, se iniciará el desarrollo en una laptop, esto pues la Raspberry PI podría tener una limitante computacional que se sale de los objectivos del proyecto.
 
 \subsection{Sensores láser}
 
 Se tienen dos tipos de sensores que se utilizarán a lo largo del desarrollo de este proyecto, los cuáles son un Kinect V2 y un sensor Hokuyo. Ambos tienen soporte en ROS, por lo que en esta sección, el trabajo a realizar es instalar el software que ya existe.
 
 \begin{itemize}
-\item Para el caso del sensor Kinect V2 se utilizó el software que se encuentra en el repositorio \href{https://github.com/code-iai/iai_kinect2}{Iai\_Kinect2}. En este repositorio se encuentran una serie de herramientas para calibrar, realizar el registro de la información de profundidad, y utilizar libfreenect2 por debajo. Esta librería utiliza aceleración gráfica con OpenCL, por lo que es importante tener los mejores drivers de la tarjeta de video disponible.
+\item Para el caso del sensor Kinect V2 se utilizó el software que se encuentra en el repositorio \href{https://github.com/code-iai/iai_kinect2}{Iai\_Kinect2}. En este repositorio se encuentran una serie de herramientas para calibrar, realizar el registro de la información de profundidad, y utilizar libfreenect2 por debajo. Esta biblioteca utiliza aceleración gráfica con OpenCL, por lo que es importante tener los mejores drivers de la tarjeta de video disponible.
 
 \item Para el uso del sensor Hokuyo, también existe un paquete llamado \href{https://github.com/ros-drivers/hokuyo_node}{Hokuyo\_node} que puede ser utilizado para la lectura del sensor directamente al tópico LaserScan.
 \end{itemize}
@@ -317,11 +322,11 @@ La salida de ambos sensores puede ser visualizada en \href{http://wiki.ros.org/r
 
 \label{seccionodometria}
 
-La información de la odometría del robot se puede leer directamente del mismo, sin embargo la librería del lado de la computadora principal debe ser implementada primero. Los comandos son los mismos que los explicados en la sección del \hyperref[libreria]{Protocolo de comunicación USB}, sin embargo lo que se envía y recibe está inverso. Se implementará esta ``driver'' en Python, por su facilidad y modularidad.
+La información de la odometría del robot se puede leer directamente del mismo, sin embargo la biblioteca del lado de la computadora principal debe ser implementada primero. Los comandos son los mismos que los explicados en la sección del \hyperref[libreria]{Protocolo de comunicación USB}, sin embargo lo que se envía y recibe está inverso. Se implementará esta ``driver'' en Python, por su facilidad y modularidad.
 
 La figura \ref{F:rosnode} explica la relación necesaria entre el nodo principal, y este driver para obtener la información de odometría.
 
-ROS posee una librería llamada \textbf{rospy} la cuál es útil para realizar nodos de ros que puedan publicar mensajes. En particular, los mensajes de odometría se pueden publicar utilizando un tipo de mensaje llamado \textbf{Odometry}, el cuál se encuentra en la librería \textbf{nav\_msgs.msg}.
+ROS posee una biblioteca llamada \textbf{rospy} la cuál es útil para realizar nodos de ros que puedan publicar mensajes. En particular, los mensajes de odometría se pueden publicar utilizando un tipo de mensaje llamado \textbf{Odometry}, el cuál se encuentra en la biblioteca \textbf{nav\_msgs.msg}.
 
 Los mensajes de este tipo poseen las características que se encuentran resumidas en el cuadro \ref{T:odometría}.
 
@@ -342,7 +347,7 @@ El mensage del tipo PoseWithCovariance contiene la información de la posición 
 
 \subsection{Árbol de Tf}
 
-La mayoría de paquetes en Ros requieren que un árbol de transformaciones sea publicado utilizando la librería Tf. Esta librería se utiliza para definir las compensaciones necesarias para cada objeto del mundo cuando se da un movimiento.
+La mayoría de paquetes en Ros requieren que un árbol de transformaciones sea publicado utilizando la biblioteca Tf. Esta biblioteca se utiliza para definir las compensaciones necesarias para cada objeto del mundo cuando se da un movimiento. Es decir, indica cuánto se mueve un objeto dada su relación estática o dinámica contra otro objeto. En este caso por ejemplo, el sensor Hokuyo tiene una relación estática contra la base del robot omnidireccional. Dado un movimiento de la base del carrito omnidireccional en el mundo, hay un movimiento equivalente del sensor en el mundo.
 
 \begin{figure}[H]
 \centering

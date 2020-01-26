@@ -2,21 +2,21 @@
 
 En este capítulo se revisará la implementación del diseño anteriormente descrito, con los resultados que se obtuvieron para cada etapa. El orden de la metodología descrita en el capítulo introductorio coincide con el orden en el que se implementó cada etapa, por lo que se aconseja tener presente la \hyperref[metodología]{metodología}.
 
-La sección \textbf{Kinect} explica el proceso para realizar la instalación del software, calibración y pruebas de funcionamiento utilizando el sistema ROS en Linux. Se agrega una sección de problemas, en los que se identifica los mayores problemas encontrados en esta etapa.
+La sección \textbf{Kinect} explica el proceso para realizar la instalación del software, calibración y pruebas de funcionamiento utilizando el sistema ROS en Linux. Se agrega una sección de retos, en los que se identifica los mayores retos encontrados en esta etapa.
 
 Continuando con la sección \textbf{Hokuyo}, se procesede a mostrar el proceso de instalación del software, y se muestran algunas capturas que de nuevo demuestran el funcionamiento correcto de este sensor en ROS.
 
 Posteriormente se realizan las pruebas de conexión entre un \textbf{STM32F4 y un roboclaw}, donde se realiza además el desarrollo de la librería de comunicación explicada en el capítulo de diseño.
 
-La sección de \textbf{Encodificador de cuadratura} realiza un recuento del proceso de conexión entre el motor y el stm, además de la programación necesaria para realizar la lectura, y detalla algunos problemas encontrados para esta etapa.
+La sección de \textbf{Encodificador de cuadratura} realiza un recuento del proceso de conexión entre el motor y el stm, además de la programación necesaria para realizar la lectura, y detalla algunos retos encontrados para esta etapa.
 
 La sección \textbf{Controlador PID} realiza un recuento de la implementación, sintonización y muestra los resultados de un cambio en la referencia a 0.5s.
 
 El \textbf{Ensamblado de la base} se muestra en la sección correspondiente, donde además se proporcionan algunos videos de las primeras pruebas de funcionamiento del robot.
 
-Finalmente, la sección \textbf{Protocolo de comunicación}, establece el proceso que se llevó a cabo para desarrollar esta librería, y muestra algunos de los problemas más importantes presentados durante el desarrollo de este proyecto.
+Finalmente, la sección \textbf{Protocolo de comunicación}, establece el proceso que se llevó a cabo para desarrollar esta librería, y muestra algunos de los retos más importantes presentados durante el desarrollo de este proyecto.
 
-El cálculo de la odometría, y la correción de problemas son secciones que llegan a culminar el proceso de diseño. Las secciones siguientes, denominadas \textbf{Implementación de gmapping y amcl}, realizan la implementación de los módulos necesarios para realizar la localización y navegación.
+El cálculo de la odometría, y la correción de errores son secciones que llegan a culminar el proceso de diseño. Las secciones siguientes, denominadas \textbf{Implementación de gmapping y amcl}, realizan la implementación de los módulos necesarios para realizar la localización y navegación.
 
 \newpage
 
@@ -96,9 +96,9 @@ Finalmente, ROS posee una herramienta llamada \textit{RQT\_GRAPH}, la cuál ayud
 \label{F:diagramakinect}
 \end{figure}
 
-\subsection{Problemas}
+\subsection{Retos}
 
-En esta etapa, el único problema que se encontró fué que el nodo de ROS por defecto no posee permisos para utilizar el USB, por lo que se le deben otorgar los mismos. La solución se menciona el repositorio libfreenect2.
+En esta etapa, el único reto que se encontró fué que el nodo de ROS por defecto no posee permisos para utilizar el USB, por lo que se le deben otorgar los mismos. La solución se menciona el repositorio libfreenect2.
 
 \section{Hokuyo}
 
@@ -141,9 +141,9 @@ Además, la figura \ref{F:hokuyorviz} muestra la visualización del sensor laser
 \label{F:hokuyorviz}
 \end{figure}
 
-\subsection{Problemas}
+\subsection{Retos}
 
-Con las instalación del software \textit{Hokuyo\_node} no se encontró ningún problema.
+Con las instalación del software \textit{Hokuyo\_node} no se encontró ningún reto.
 
 \section{Conexión de un STM32F4 y un roboclaw}
 
@@ -171,13 +171,13 @@ Para alimentar la parte lógica del controlador Roboclaw, existen dos opciones. 
 
 El código que controla el microcontrolador stm32f411 se puede encontrar en el repositorio \href{https://github.com/arcoslab/stm32-roboclaw/}{stm32-roboclaw}. En específico el commit donde se realizan las primeras pruebas de conexión con el roboclaw se puede encontrar \href{https://github.com/arcoslab/stm32-roboclaw/commit/a6550243ac7c911bdcf5b3bf379690d89427ade5}{aquí}.
 
-\subsection{Problemas}
+\subsection{Retos}
 
 En esta etapa del proyecto, las conexiones eléctricas eran bastante sencillas, pues realmente sólo se necesitan cuatro cables (RX, TX y dos tierras) para probar la conexión.
 
 En el aspecto de la programación, fué fundamental la lectura del código escrito por IonMotion para realizar la misma tarea desde una computadora. El código mencionado se puede encontrar \href{http://www.basicmicro.com/downloads}{aquí}. El manual de Roboclaw también jugó un papel importante proporcionando la función que calcula el crc16 bits.
 
-Posteriormente se realizaron cambios importantes a la librería, conforme algunos otros problemas fueron surgiendo. Por ejemplo se implementó una función ``padre'' que llamara a las instrucciones 0,1,4,5 según correspondiera.
+Posteriormente se realizaron cambios importantes a la librería, conforme algunos otros retos fueron surgiendo. Por ejemplo se implementó una función ``padre'' que llamara a las instrucciones 0,1,4,5 según correspondiera.
 
 Además, se reimplementaron las instrucciones de libopencm3 \textit{usart\_send\_blocking} y \textit{usart\_recv\_blocking} con timeout. El commit donde se realizó dicho cambio se puede encontrar \href{https://github.com/arcoslab/stm32-roboclaw/commit/de483b19c8b88b6c0c21cd51b446042f611a888b#diff-ceb3425682487491df75810266c27b6d}{aquí}.
 
@@ -185,7 +185,7 @@ Además, se reimplementaron las instrucciones de libopencm3 \textit{usart\_send\
 
 \subsection{Conexión}
 
-El sensor codificador de cuadratura, en el caso de los motores que se van a utilizar, utilizan un imán y dos sensores magnéticos con un desface mecánico de $45^\circ$ para producir las señales. La imagen \ref{F:encoderfisico} muestra el sensor mencionado.
+El sensor codificador de cuadratura, en el caso de los motores que se van a utilizar, utilizan un imán y dos sensores magnéticos con un desface mecánico de $90^\circ$ para producir las señales. La imagen \ref{F:encoderfisico} muestra el sensor mencionado.
 
 \begin{figure}[h!]
 \centering
@@ -218,9 +218,9 @@ La programación de los cálculos del encoder de cuadratura conllevó varias ite
 
 Actualmente, existe un error con esta sección específica, por lo cuál debe ser revisada.
 
-\subsection{Problemas}
+\subsection{Retos}
 
-Algunos de los problemas que se encontraron durante el desarrollo de esta sección son:
+Algunos de los retos que se encontraron durante el desarrollo de esta sección son:
 
 \begin{itemize}
 \item En de las conexiones eléctricas debido a ``jumpers'' defectuosos.
@@ -254,18 +254,19 @@ La primera sintonización se realizó imprimiendo la informaicón en pantalla, y
 
 Es factible que posteriormente se haga un trabajo más profundo en lo que es la sintonización de este PID, sin embargo de momento no es un problema.
 
-\subsection{Problemas}
+\subsection{Retos}
+Primeramente, se encontró que el algoritmo que estaba siendo utilizado para el control PID era incorrecto. Esto puesto que inicialmente el cálculo que se estaba realizando para el error no contemplaba que la velocidad podía ser negativa o positiva, y el cálculo varía de acuerdo a esto. Esto se solucionó utilizando un programa para graficar las velocidades y los valores del PID en cada instante, justamente para encontrar errores.
 
-\begin{itemize}
-\item Algoritmo incorrecto de control PID
-\item Fallo intermitente en las conexiones del encoder, lo cuál causaba errores difíciles de detectar
-\item Cálculo incorrecto de las velocidades de cada motor, lo cuál afecta el control cerrado.
-\item Mal ajuste de la frecuencia de comandos hacia el Roboclaw.
+Segundo, se encontró un fallo intermitente en las conexiones del encoder, lo cuál causaba errores difíciles de detectar. Finalmente se pudo solventar moviendo las conexiones mientras se realizaban pruebas con el robot en el aire.
+
+Se encontró que se realizaba el cálculo incorrecto de las velocidades de cada motor, lo cuál afecta el control cerrado. Esto puesto que las velocidades se cálculaban utilizando el tiempo transcurrido como una constante, sin embargo esto no era cierto para todos los casos.
+
+Finalmente, se encontró que había un mal ajuste de la frecuencia de comandos hacia el Roboclaw. Esto ocasionaba que el controlador de los motores no respondiera correctamente a los comandos. Bajando la frecuencia de los comandos se solucionó el problema.
 \end{itemize}
 
 \subsection{Gráficas}
 
-Debido a los últimos problemas inesperados en la odmetría del robot, se procedió a diseñar funciones de depuración en todos los aspectos anteriormente diseñados. Por lo tanto, se decidió realizar gráficas de la velocidad de los motores, y la posicón. Indirectamente estas gráficas muestran el funcionamiento del PID, donde se aplica un cambio en la referencia a los 0.5s. Las figuras \ref{F:pidposicion} y \ref{F:pidvelocidad} muestran lo anteriormente mencionado.
+Debido a los últimos retos inesperados en la odmetría del robot, se procedió a diseñar funciones de depuración en todos los aspectos anteriormente diseñados. Por lo tanto, se decidió realizar gráficas de la velocidad de los motores, y la posicón. Indirectamente estas gráficas muestran el funcionamiento del PID, donde se aplica un cambio en la referencia a los 0.5s. Las figuras \ref{F:pidposicion} y \ref{F:pidvelocidad} muestran lo anteriormente mencionado.
 
 \begin{figure}[H]
 \centering
@@ -323,10 +324,10 @@ A continuación se muestran las capturas del ensamble. El proceso requirió arma
 \label{F:ensamble4}
 \end{figure}
 
-\subsection{Problemas}
+\subsection{Retos}
 
 \begin{itemize}
-\item La mayor parte de los problemas relacionados con esta sección involucran el cableado eléctrico. Muchos de los cables utilizados no hicieron buen contacto, por lo que algunas conexiones no eran estables.
+\item La mayor parte de los retos relacionados con esta sección involucran el cableado eléctrico. Muchos de los cables utilizados no hicieron buen contacto, por lo que algunas conexiones no eran estables.
 \item Falta de piezas impresas en 3D, y ruptura de algunas.
 \end{itemize}
 
@@ -338,19 +339,19 @@ A continuación en \href{https://photos.app.goo.gl/sycSZ52LNMN4YrVcA}{este} link
 
 Para esta sección se realizaron varias iteraciones, y fué de los aspectos más problemáticos del proyecto.
 
-\subsection{Prototipos y problemas}
+\subsection{Prototipos y retos}
 
 Se inció con un protocolo que realizaba la transmición de información, enviando la información como un string, y no byte por byte. Es decir, 4.123 lo enviaría como 4 (1 byte), . (1 byte), 1 (1 byte), 2 (1 byte), 3 (1 byte). Esto hace que la transmición sea muy ineficiente, pues para un número flotante, que necesita 4 bytes para guardarse en memoria, se necesitan muchos bytes para mandarlo como string.
 
-El mayor problema surgió dado que al ser variable la cantidad de datos que transmite (cuando se transmite 1.23 son cuatro byes, pero un número como 1.299999999999999 consume más bytes) es variable, se llenaba el espacio de memoria dinámica en la recepción, y el programa fallaba.
+El mayor reto surgió dado que al ser variable la cantidad de datos que transmite (cuando se transmite 1.23 son cuatro byes, pero un número como 1.299999999999999 consume más bytes) es variable, se llenaba el espacio de memoria dinámica en la recepción, y el programa fallaba.
 
 Por esta razón se implementó el segundo prototipo, el cuál manda toda la información en bytes. Esto provoca que la cantidad de datos transmitidos sean constantes, y el protocolo sea más eficiente. Además se agregó el checksum crc16 bits para no ejecutar instrucciones corruptas, pues esto en algún momento causó problemas también.
 
 \subsection{Libopencm3-plus}
 
-Existieron ciertos problemas con esta librería, puesto que una sección de código insertaba un ``\textbackslash r'' después de cada ``\textbackslash n'' en la transmisión serial. Este bug fué el problema más difícil de encontrar durante el desarrollo del proyecto.
+Existieron ciertos retos con esta librería, puesto que una sección de código insertaba un ``\textbackslash r'' después de cada ``\textbackslash n'' en la transmisión serial. Este bug fué el reto más difícil de encontrar durante el desarrollo del proyecto.
 
-\subsection{Problemas}
+\subsection{Retos}
 
 \begin{itemize}
 \item Consumo de memoria dinámico por mal diseño de protocolo de comunicación.
@@ -361,7 +362,7 @@ Existieron ciertos problemas con esta librería, puesto que una sección de cód
 
 El diseño del paquete en ROS se realizó utilizando como referencia código escrito para controlar el Robot llamado Neato. Esta librería se puede encontrar \href{https://github.com/mikeferguson/neato_robot}{aquí}. Nos interesa en particular, el código que se ecuentra dentro de neato\_robot/nodes/neato.py puesto que este script se encarga de subscribirse al tópico \textit{cmd\_vel} y publicar información de \textit{tf} y de \textit{odom}.
 
-Se creó un repositorio con este código, el cuál se puede encontrar \href{https://github.com/slealq/omnidirectional_robot}{aquí}. En cuestión de problemas no se encontraron muchos, gracias a tener el ejemplo de código mencionado anteriomente. Se realizaron cambios de prueba en la frecuencia del nodo, sin embargo no hay cambios en la estructura como tal.
+Se creó un repositorio con este código, el cuál se puede encontrar \href{https://github.com/slealq/omnidirectional_robot}{aquí}. En cuestión de dificultades no se encontraron muchos, gracias a tener el ejemplo de código mencionado anteriomente. Se realizaron cambios de prueba en la frecuencia del nodo, sin embargo no hay cambios en la estructura como tal.
 
 Las instrucciones de instalación del repositorio se encuentran en el \textit{README.md} del repositorio. La figura \ref{F:repositorio_installacion} muestra un ejemplo de las dependencias a instalar, y las instrucciones para instalar el paquete como tal.
 
@@ -391,23 +392,23 @@ La visualización de los tópicos que se levantan cuando se corre este comando s
 
 El cálculo de la odometría se realizó hasta este punto, puesto que se necesitaba primero enviar comandos de movimiento hacia la base, y mover la base sobre alguna superficie para poder medir la veracidad de las mediciones de odometría.
 
-\subsection{Problemas}
+\subsection{Retos}
 
-Las ecuaciones que se siguieron son realmente las mostradas en las sección de diseño, y no hubieron problemas en impelementar las ecuaciones.
+Las ecuaciones que se siguieron son realmente las mostradas en las sección de diseño, y no hubieron dificultades en impelementar las ecuaciones.
 
-Sin embargo, se encontraron varios problemas por resolver, algunos de los cuáles están relacionados a las interrupciones systick.
+Sin embargo, se encontraron varios retos por resolver, algunos de los cuáles están relacionados a las interrupciones systick.
 
 Cuando sucede una interrupción en Systick, se modifica el valor de las variables globales de posición. Si en un dado momento, el ciclo principal está realizando la transferencia de esta variable por comunicación serial, y el ciclo systick realiza una interrupción de hardware, el valor envíado por el puerto serial será incorrecto. Para esto se crearon unas variables temporales que se actualizan únicamente si una bandera de actualización se activa.
 
 Por lo tanto, cuando se inicia una nueva comunicación serial, se desactiva una señal que deja de actualizar la variable de posición global, mientras se esté realizando la transmición de la variable. El diagrama mostrado en la figura \ref{F:main} se muestra este proceso, y la bandera \textit{update\_global\_pos} es la mencionada anteriormente.
 
-\section{Pruebas y correción de problemas}
+\section{Pruebas y correción de errores}
 
 De las primeras pruebas que se realizó, fué verificar el movimiento correcto de la base omnidireccional utilizando el joystick. Se ajustaron los parámetros del PID de cada ruedas, para que el mismo fuera más rápido.
 
 Realizando estas pruebas, fué donde se detectó el error mencionado del protocolo de comunicación, en donde la librería \textit{libopencm3-plus} tenía una pulga. Se detectó puesto que en momentos aleatorios del funcionamiento del carrito el stm32f411 quedaba en un estado de abort.
 
-Utilizando gdb se obtuvieron pistas del problema, sin embargo no fué hasta leer el código contenido en la librería que se logró identificar el problema.
+Utilizando gdb se obtuvieron pistas del reto, sin embargo no fué hasta leer el código contenido en la librería que se logró identificar el reto.
 
 Posteriormente se realizó la verificación de la información obtenida de la odometría de las ruedas. Las pruebas que se realizaron fué medir con una cinta 1 metro, realizar marcas en el piso y realizar pruebas con movimientos hacia adelante, laterales y rotacionales.
 
@@ -612,10 +613,28 @@ cuáles se muestran a continuacón:
 \caption{Fotografía real del pasillo en el que se realizó el mapeo anterior.}
 \end{figure}
 
-\subsection{Problemas}
+% Please add the following required packages to your document preamble:
+% \usepackage{booktabs}
+Adicionalmente, se realizaron mediciones para comparar los resultados del mapeo vs las distancias en la realidad. A continuación la figura \ref{tab:medidas_comparativas} muestra algunas de las pruebas realizadas.
+
+% Please add the following required packages to your document preamble:
+% \usepackage{booktabs}
+\begin{table}[]
+  \centering
+  \begin{tabular}{@{}llll@{}}
+  \toprule
+  \textbf{Prueba} & \textbf{Medida real} & \textbf{Medida en mapa} & \textbf{Error} \\ \midrule
+  Distancia entre paredes & 3.5 metros & 3.7 metros & 5.7\% \\
+  Ángulos en paredes & 90 grados & 90.5 grados & 0.5\% \\ \bottomrule
+  \end{tabular}
+  \caption{Medidas comparativas entre el mapa generado por la navegación y la realidad}
+  \label{tab:medidas_comparativas}
+  \end{table}
+
+\subsection{Retos}
 
 Como se mencionó anteriormente, para esta sección se debieron corregir algunos
-problemas encontrados durante la implementación de los cálculos de la
+retos encontrados durante la implementación de los cálculos de la
 odometría del robot.
 
 Sin embargo, propiamente con esta sección no se encontraron errores importantes.
